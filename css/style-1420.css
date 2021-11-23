@@ -1,0 +1,23 @@
+@media (max-width: 1420px) {
+  .header__list li {
+    margin: 0 0 0 34px;
+  }
+
+  .bottom__list-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
+
+  .catalog__country-info {
+    max-width: 100%;
+  }
+
+  .accordion {
+    max-width: 48%;
+  }
+
+  .accordion__painter-list {
+  max-height: 440px;
+  }
+}

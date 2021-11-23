@@ -1,0 +1,20 @@
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gallery__right-elem {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .gallery__swiper-navigation {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .gallery__swiper-slide::before {
+    padding-top: 110%;
+  }
+}
