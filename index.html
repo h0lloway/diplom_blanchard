@@ -22,7 +22,7 @@
 
   <!-- swiper -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
 
 
   <!-- hover-btn -->
@@ -168,12 +168,6 @@
                       </li>
                       <li class="bottom__dropdown-item">
                         <a class="bottom__item-link bottom__item-renuar" href="#">Ренуар</a>
-                      </li>
-                      <li class="bottom__dropdown-item">
-                        <a class="bottom__item-link bottom__item-mone" href="#">Моне</a>
-                      </li>
-                      <li class="bottom__dropdown-item">
-                        <a class="bottom__item-link bottom__item-sisley" href="#">Cислей</a>
                       </li>
                     </ul>
                   </div>
@@ -331,7 +325,7 @@
       </div>
       <div class="hero__container container ">
         <div class="hero__content">
-          <div class="hero__info">
+          <div class="hero__info" id="button-contacts">
             <h1 class="hero__title">
               Прикоснитесь к&nbsp;прекрасному
             </h1>
@@ -340,8 +334,9 @@
               предпосылки для
               новых предложений.
             </p>
-            <button class="hero__btn my-btn hvr-wobble-horizontal" id="button-contacts"
-              aria-label="Подписаться на рассылку">Подписаться на&nbsp;рассылку</button>
+            <a class="hero__btn my-btn hvr-wobble-horizontal" href="#button-contact" aria-label="Подписаться на рассылку">
+              Подписаться на&nbsp;рассылку
+            </a>
           </div>
         </div>
       </div>
@@ -573,8 +568,7 @@
             <div class="gallery__bottom-text">
               <p>
                 Вам предоставляется&nbsp;10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
-                  style="color: var(--hover-color); border-bottom: 1px solid var(--hover-color)">авторизуйтесь</a>,
-                либо воспользуйтесь лицензией.
+                  class="gallery__text-link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
               </p>
             </div>
           </div>
@@ -691,9 +685,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-left painter" data-tabs-target="Bergonyone">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет художника">
@@ -702,9 +694,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-left painter" data-tabs-target="Bissolo">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет художника">
@@ -713,9 +703,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-left painter" data-tabs-target="Boltraffio">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет художника">
@@ -724,9 +712,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-left painter" data-tabs-target="Bonsinyori">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет художника">
@@ -735,9 +721,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-left painter" data-tabs-target="Bottichini">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет художника">
@@ -746,9 +730,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-left painter" data-tabs-target="other">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет художника">
@@ -757,9 +739,7 @@
               <p class="catalog__content-txt">
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <button class="catalog__painer-btn my-btn" aria-label="Переход в Галерею">
-                <a href="#gallery">В галерею</a>
-              </button>
+              <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
             <div class="catalog__content-right">
               <ul class="catalog__accordion list-reset one">
@@ -890,9 +870,7 @@
                         <div class="right-text">
                           А в галерее вы всегда можете найти что-то интересное для себя
                         </div>
-                        <button class="right-btn my-btn" aria-label="Переход в Галерею">
-                          <a href="#gallery">В галерею</a>
-                        </button>
+                        <a class="right-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
                       </div>
                     </div>
                   </div>
@@ -923,9 +901,7 @@
                         <div class="right-text">
                           А в галерее вы всегда можете найти что-то интересное для себя
                         </div>
-                        <button class="right-btn my-btn" aria-label="Переход в Галерею">
-                          <a href="#gallery">В галерею</a>
-                        </button>
+                        <a class="right-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
                       </div>
                     </div>
                   </div>
@@ -956,9 +932,7 @@
                         <div class="right-text">
                           А в галерее вы всегда можете найти что-то интересное для себя
                         </div>
-                        <button class="right-btn my-btn" aria-label="Переход в Галерею">
-                          <a href="#gallery">В галерею</a>
-                        </button>
+                        <a class="right-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
                       </div>
                     </div>
                   </div>
@@ -989,9 +963,7 @@
                         <div class="right-text">
                           А в галерее вы всегда можете найти что-то интересное для себя
                         </div>
-                        <button class="right-btn my-btn" aria-label="Переход в Галерею">
-                          <a href="#gallery">В галерею</a>
-                        </button>
+                        <a class="right-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
                       </div>
                     </div>
                   </div>
@@ -1022,9 +994,7 @@
                         <div class="right-text">
                           А в галерее вы всегда можете найти что-то интересное для себя
                         </div>
-                        <button class="right-btn my-btn" aria-label="Переход в Галерею">
-                          <a href="#gallery">В галерею</a>
-                        </button>
+                        <a class="right-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
                       </div>
                     </div>
                   </div>
@@ -1055,9 +1025,7 @@
                         <div class="right-text">
                           А в галерее вы всегда можете найти что-то интересное для себя
                         </div>
-                        <button class="right-btn my-btn" aria-label="Переход в Галерею">
-                          <a href="#gallery">В галерею</a>
-                        </button>
+                        <a class="right-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
                       </div>
                     </div>
                   </div>
@@ -1118,7 +1086,7 @@
     <!-- events -->
     <!-- events -->
 
-    <section class="events">
+    <section class="events" id="events">
 
       <div class="events__container container">
         <h2 class="events__title common-title">
@@ -1309,10 +1277,10 @@
               <h2 class="checkbox__title for_mobile" tabindex="0">
                 Категории
               </h2>
-              <h2 class="checkbox__title" tabindex="0">
+              <h2 class="checkbox__title">
                 Категории
               </h2>
-              <ul class="checkbox-list checklist-active">
+              <ul class="checkbox-list checklist-active list-reset">
                 <li class="checkbox-list--item">
                   <label class="checkbox--label">
                     <input type="checkbox" class="checkbox" />
@@ -1640,20 +1608,20 @@
 
     <section class="contacts" id="contacts">
 
-      <div class="container contacts__container">
+      <div class="contacts__container container">
         <h2 class="contacts__title common-title">Контакты</h2>
       </div>
       <div class="contacts__content flex">
-        <div class="contacts__content-left">
+        <div class="contacts__content-left" id="button-contact">
           <h3 class="contacts__subtitle">Шоурум &#8470;&nbsp;4</h3>
           <p class="contacts__text">Леонтьевский переулок, дом 5/1</p>
           <h3 class="contacts__form-title">Заказать обратный звонок</h3>
           <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts">
 
-            <label for="" class="contacts__form-label">
+            <label class="contacts__form-label">
               <input class="contacts__form-input" type="text" placeholder="Имя*" data-validate-field="name">
             </label>
-            <label for="" class="contacts__form-label">
+            <label class="contacts__form-label">
               <input class="contacts__form-input" type="tel" placeholder="Телефон*" data-validate-field="tel"
                 data-validate-rules="phone">
             </label>
@@ -1756,7 +1724,7 @@
   </footer>
 
   <!-- yandex map -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU"></script>
 
   <!-- simplebar -->
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -1778,7 +1746,7 @@
   <script src="js/inputmask.min.js"></script>
 
   <!-- yakor -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
   <!-- myJs -->
   <script src="js/main.js"></script>
