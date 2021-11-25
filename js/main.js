@@ -102,6 +102,14 @@ let gallerySlider = new Swiper(".gallery__slides-container", {
       spaceBetween: 30
     },
 
+    900: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2
+      },
+      spaceBetween: 34
+    },
+
     1200: {
       slidesPerView: 3,
       grid: {
@@ -212,6 +220,11 @@ const choices = new Choices(element, {
   searchEnabled: false,
   placeholder: true,
 });
+
+// const choices = new Choices(element, {
+//   searchEnabled: false,
+//   itemSelectText: '',
+// });
 
 // accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion
 
@@ -431,9 +444,9 @@ const partnersSlider = document.querySelector('.partners__swiper-container');
 
 var partnersSwiper = new Swiper(partnersSlider, {
   slideClass: ('partners__swiper-slide'),
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  loop: true,
+  slidesPerView: "auto",
+  slidesPerGroup: 2,
+  // loop: true,
   spaceBetween: 30,
 
   navigation: {
@@ -472,10 +485,10 @@ function init() {
     // Порядок по умолчанию: «широта, долгота».
     // Чтобы не определять координаты центра карты вручную,
     // воспользуйтесь инструментом Определение координат.
-    center: [55.75846306898368, 37.601079499999905],
+    center: [55.7630863, 37.6412295],
     // Уровень масштабирования. Допустимые значения:
     // от 0 (весь мир) до 19.
-    zoom: 17,
+    zoom: 14,
     controls: []
   }, {
     suppressMapOpenBlock: true
@@ -495,7 +508,7 @@ function init() {
   var myPlacemark = new ymaps.Placemark([55.75846306898368, 37.601079499999905], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/location.svg',
-    iconImageSize: [30, 42],
+    iconImageSize: [20, 20],
     iconImageOffset: [-3, -42]
   });
 
