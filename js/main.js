@@ -27,6 +27,17 @@ $(document).ready(function () {
   });
 });
 
+// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search// search
+
+$(document).ready(function () {
+
+  $(".header__mobile-search-btn").click(function () {
+    $(".header__search-box, .header__input").toggleClass("active");
+    $(".header__input[type='text']").focus();
+  });
+
+});
+
 // menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu
 
 const params = {
@@ -83,7 +94,7 @@ let gallerySlider = new Swiper(".gallery__slides-container", {
     rows: 1,
     fill: "row"
   },
-  spaceBetween: 20,
+  spaceBetween: 50,
   pagination: {
     el: ".gallery .gallery__pagination",
     type: "fraction"
@@ -110,12 +121,20 @@ let gallerySlider = new Swiper(".gallery__slides-container", {
       spaceBetween: 34
     },
 
+    1024: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2
+      },
+      spaceBetween: 34
+    },
+
     1200: {
       slidesPerView: 3,
       grid: {
         rows: 2
       },
-      spaceBetween: 34
+      spaceBetween: 50
     }
   },
 
@@ -551,3 +570,92 @@ new JustValidate('.contacts__form', {
     },
   },
 });
+
+
+// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips
+
+tippy('#myButton', {
+  content: 'Пример современных тенденций - современная методология разработки',
+  theme: 'projects-tooltip',
+  maxWidth: 264,
+  trigger: 'click',
+  trigger: 'focus'
+});
+
+tippy('#myButton-2', {
+  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+  theme: 'projects-tooltip',
+  maxWidth: 264,
+  trigger: 'click',
+  trigger: 'focus'
+});
+
+tippy('#myButton-3', {
+  content: 'В стремлении повысить качество',
+  theme: 'projects-tooltip',
+  maxWidth: 232,
+  trigger: 'click',
+  trigger: 'focus'
+});
+
+
+// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup
+
+
+// const popupLinks = document.querySelectorAll('.popup-link');
+// const body = document.querySelector('body');
+// const lockPadding = document.querySelectorAll(".lock-padding");
+
+// let unlock = true;
+
+// const timeout = 800;
+
+// if (popupLinks.length > 0) {
+//   for (let index = 0; index < popupLinks.length; index++) {
+//     const popupLink = popupLinks[index];
+//     popupLink.addEventListener("click", function (e) {
+//       const popupName = popupLink.getAttribute('href').replace('#', '');
+//       const curentPopup = document.getElementById(popupName);
+//       popupOpen(curentPopup);
+//       e.preventDefault();
+//     });
+//   }
+// }
+
+// const popupCloseIcon = document.querySelectorAll('.close-popup');
+// if (popupCloseIcon.length > 0) {
+//   for (let index = 0; index < popupCloseIcon.length; index++) {
+//     const el = popupCloseIcon[index];
+//     el.addEventListener('click', function (e) {
+//       popupClose(el.closest('.popup'));
+//       e.preventDefault();
+//     });
+//   }
+// }
+
+// function popupOpen(curentPopup) {
+//   if (curentPopup && unlock) {
+//     const popupActive = document.querySelector('.popup.popup--open');
+//     if (popupActive) {
+//       popupClose(popupActive, false);
+//     } else {
+//       bodyLock();
+//     }
+//     curentPopup.classList.add('popup--open');
+//     curentPopup.addEventListener("click", function (e) {
+//       if (!e.target.closest('.popup__content')) {
+//           popupClose(e.target.closest('.popup'));
+//       }
+//     });
+//   }
+// }
+
+// function bodyLock() {
+//   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+//   for (let index = 0; index < lockPadding.length; index++) {
+//     const el = lockPadding[index];
+//     el.style.paddingRight = lockPaddingValue;
+//   }
+// }
+
