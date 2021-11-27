@@ -417,14 +417,77 @@
   }
 
   .events__list {
-    gap: 25px;
+    gap: 26px;
+  }
+
+  .events__list:nth-child(3n+3) {
+    gap: 0px;
   }
 
   .events__card-body {
-    padding: 12px 24px 48px 35px;
+    padding: 0 17px 49px 35px;
+  }
+
+  .events__teg {
+    letter-spacing: -0.3px;
+  }
+
+  .events__item-title {
+    display: none;
+  }
+
+  .events__item-text {
+    display: none;
+  }
+
+  .events__item-title-1024 {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .events__item-text-1024 {
+    display: block;
+  }
+
+  .btn-center {
+    padding-right: 29px;
   }
 
   .events__btn {
-    margin-top: 25px;
+    margin-top: 29px;
+    line-height: 26px;
   }
+
+  /* publications  *//* publications  *//* publications  *//* publications  *//* publications  *//* publications  *//* publications  *//* publications  *//* publications  *//* publications  *//* publications  */
+
+  .publications {
+    background-image: url(../img/7-publications/publications-background-1024.jpg);
+  }
+
+  .publications__container {
+    padding-right: 33px;
+  }
+
+  .publications-swiper {
+    margin-left: 15px;
+  }
+
+  .publications-info {
+    padding-top: 14px;
+  }
+
+  .publications__subtitle {
+    padding-top: 17px;
+  }
+
+  .publications-price__form {
+    margin-top: 14px;
+  }
+
+  /* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects */
+
+  .projects__container {
+    padding: 0 34px 0 50px;
+  }
+
 }
