@@ -257,7 +257,16 @@ $(document).ready(function () {
   });
 });
 
+// 2й аккордион
 
+// document.addEventListener('DOMContentLoaded', function () {
+//   $(".js-accordion").accordion({
+//     collapsible: true,
+//     active: false,
+//     icons: false,
+//     heightStyle: 'content'
+//   });
+// });
 
 // events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events
 
