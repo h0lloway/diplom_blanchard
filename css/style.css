@@ -1726,7 +1726,7 @@ body {
 
 /* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox */
 
-.checkbox__title {
+.publications__checkbox-title {
 
   display: inline-block;
   margin: 0;
@@ -1739,7 +1739,7 @@ body {
   color: var(--white-color);
 }
 
-.questions {
+.publications__checkbox-wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1748,7 +1748,7 @@ body {
   list-style: none;
 }
 
-.heading {
+.publications__checkbox-btn {
   position: relative;
   display: block;
   width: 100%;
@@ -1802,8 +1802,8 @@ body {
   border-color: #C283F3;
 }
 
-.checkbox:focus-visible:not(:checked) ~ .checkbox-content .custom-checkbox--text,
-.checkbox:checked ~ .checkbox-content .custom-checkbox--text {
+.checkbox:focus-visible:not(:checked) ~ .checkbox-content .checkbox-text,
+.checkbox:checked ~ .checkbox-content .checkbox-text {
   color: #C283F3;
 }
 
@@ -1811,7 +1811,7 @@ body {
   opacity: 1;
 }
 
-.custom-checkbox--text {
+.checkbox-text {
   padding-left: 7px;
 
   font-weight: 400;
@@ -1831,23 +1831,23 @@ body {
 }
 
 @media (max-width: 580px) {
-  .questions {
+  .publications__checkbox-wrap {
     align-items: stretch;
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .heading {
+  .publications__checkbox-btn {
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
   }
 
-  .heading {
+  .publications__checkbox-btn {
     font-size: 16px;
     transition: color 0.3s ease;
   }
 
-  .heading::after {
+  .publications__checkbox-btn::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -1860,12 +1860,12 @@ body {
     transition: transform 0.3s ease;
   }
 
-  .heading.is-active::after {
+  .publications__checkbox-btn.is-active::after {
     transform: translateY(-50%) rotate(225deg);
   }
 
-  .heading.is-active ~ .checkbox-wrap .checkbox-content,
-  .heading:not(.is-active)
+  .publications__checkbox-btn.is-active ~ .checkbox-wrap .checkbox-content,
+  .publications__checkbox-btn:not(.is-active)
     ~ .checkbox-wrap
     .checkbox:checked
     ~ .checkbox-content {
@@ -1927,141 +1927,6 @@ body {
   }
 }
 
-
-/*
-
-.for_mobile {
-  display: none;
-}
-
-.checkbox__title:focus-visible {
-  outline: 2px solid #C283F3;
-}
-
-.checkbox--label {
-  display: block;
-  position: relative;
-  padding-left: 25px;
-  max-width: 300px;
-
-  color: var(--white-color);
-  transition: color .2s ease-in-out;
-  cursor: pointer;
-}
-
-
-
-.checkbox--label:hover {
-  color: #C283F3;
-}
-
-.checkbox--label:hover .custom-checkbox {
-  border-color: #C283F3;
-}
-
-.checkbox:focus-visible + .custom-checkbox {
-  outline: 2px solid #bb9a47;
-}
-
-.checkbox--label:active {
-  color: #C283F3;
-}
-
-.checkbox--label:active .custom-checkbox {
-  border-color: #C283F3;
-}
-
-.checkbox--label-checked:after {
-  content: "x";
-  position: absolute;
-  outline: 1px solid #C283F3;
-  right: 0;
-}
-
-.checkbox {
-  position: absolute;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
-
-.checkbox:checked + .custom-checkbox {
-  border-color: #C283F3;
-}
-
-.checkbox:checked + .custom-checkbox + .custom-checkbox--text {
-  color: #C283F3;
-}
-
-.custom-checkbox {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  border: 1px solid grey;
-  left: 0;
-  top: calc((100% - 13px) / 2);
-
-  transition: border .2s ease-in-out;
-}
-
-.custom-checkbox:before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  border-radius: 100%;
-  background-color: #C283F3;
-  top: calc(50% - 2px);
-  left: calc(50% - 2px);
-
-  opacity: 0;
-}
-
-.checkbox:checked + .custom-checkbox:before  {
-  opacity: 1;
-}
-
-.checkbox--label {
-  opacity: 1;
-  transform: translateY(-20px);
-  transition-property: opacity, transform;
-  transition: .3s ease-in-out;
-}
-
-.checkbox--label.checkbox--label-active {
-  display: block;
-}
-
-.checkbox--label.animation-test {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-@media (max-width: 580px) {
-
-  .checkbox__title {
-    display: none;
-  }
-
-  .for_mobile {
-    display: block;
-    cursor: pointer;
-  }
-
-  .checkbox--label {
-    display: none;
-  }
-
-  .checkbox--label {
-    opacity: 0;
-  }
-} */
-
-
 /* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox */
 
 .publications {
@@ -2092,10 +1957,6 @@ body {
   color: var(--white-color);
 }
 
-.publications-tab {
-  display: block;
-}
-
 .publications__subtitle {
   margin: 0;
   padding-top: 14px;
@@ -2106,106 +1967,6 @@ body {
   color: var(--white-color);
 }
 
-.publications__list_label {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding-top: 7px;
-}
-
-.publications__item_label:not(:last-child) {
-  margin-bottom: 13px;
-}
-
-.publications-content {
-  display: block;
-  flex-direction: column;
-  height: max-content;
-}
-
-/*галка в квадрате*/
-.publications__label {
-  position: relative;
-  display: block;
-  width: max-content;
-
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--white-color);
-  cursor: pointer;
-  transition: border .4s ease-in-out, color .4s ease-in-out;
-}
-
-.publications__label:focus .publications__span,
-.publications__label:hover .publications__span,
-.publications__label:active .publications__span {
-  border: 1px solid var(--color-heliotrope);
-}
-
-.publications__label:focus .publications__check-text,
-.publications__label:hover .publications__check-text,
-.publications__label:active .publications__check-text {
-  color: var(--color-heliotrope);
-}
-
-.publications__check {
-  position: absolute;
-  opacity: 0;
-}
-
-.publications__span {
-
-  position: relative;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border: 1px solid lightgray;
-}
-
-.publications__span::before {
-
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--color-heliotrope);
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-}
-
-.checkbox:checked~.publications__span::before {
-
-  opacity: 1;
-}
-
-.checkbox:checked~.publications__check-text {
-
-  color: var(--color-heliotrope);
-}
-
-.checkbox:checked~.publications__span {
-
-  border: 1px solid var(--color-heliotrope);
-}
-
-.publications__check-hidden {
-
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
-
-/*конец галка в квадрате*/
 /*-+Заказ картин+-*/
 
 .swiper-wrapper {
@@ -2704,89 +2465,9 @@ input[type=number] {
     font-size: 27px;
   }
 
-  .publications__list_label {
-    grid: none;
-    width: 100%;
-  }
-
-  .publications__item_label2:first-child {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  .publications__item_label2 {
-    position: relative;
-    margin-top: -1px;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    transition: border-color .3s ease;
-  }
-
-  /*галка в квадрате*/
-  .publications__label {
-    position: relative;
-    display: block;
-    padding: 10px 0;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--white-color);
-    cursor: pointer;
-  }
-
-  .publications__label:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  .publications__check {
-    position: absolute;
-    opacity: 0;
-  }
-
-  .publications__span {
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
-    font-size: 17px;
-  }
-
-  /*конец галка в квадрате*/
-
-  .publications-checkboxes {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  .publications__item_label:first-child:hover,
-  .publications__item_label:hover,
-  .publications__item_label:focus-within {
-    border-color: var(--color-heliotrope);
-  }
-
   .publications__subtitle {
     padding-top: 2px;
     padding-bottom: 4px;
-  }
-
-  .publications-icon {
-    position: absolute;
-    top: 23px;
-    right: 2px;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-50%);
-    transition: background-color.3s, .6s ease, transform .3s, .6s ease;
-  }
-
-  .publications-icon::after {
-    content: "";
-    position: relative;
-    top: -7px;
-    right: -22px;
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 1px solid var(--white-color);
-    border-right: 1px solid var(--white-color);
-    transform: rotate(135deg);
-    transition: border-top .4s ease-in-out, border-right .4s ease-in-out;
   }
 
   .publications__subtitle:hover,
@@ -2833,7 +2514,6 @@ input[type=number] {
   }
 
   .publications__item:nth-child(2n) {
-    /*не работает*/
     margin-right: 0;
   }
 
@@ -2928,7 +2608,6 @@ input[type=number] {
 
 .partners__swiper-wrapper.swiper-wrapper {
   padding-left: 75px;
-  /* overflow: hidden; */
 }
 
 .partners__swiper-slide-link {
@@ -3010,12 +2689,7 @@ input[type=number] {
   border: 2px solid #9D5CD0;
 }
 
-/*.parent {
-  position: relative;
-} */
-
 .tooltip-btn {
-  /* position: absolute; */
   width: 16px;
   height: 16px;
   fill: transparent;
@@ -3152,6 +2826,101 @@ input[type=number] {
 
 /* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts */
 
+.contacts {
+  overflow-x: hidden; /* это нужно для того, чтоб не создавалось горизонтального скролла из-за скроллбара справа на десктопной версии, который не учитывается при задании измерений в vw */
+}
+
+.contacts__wrap {
+  border-top: 1px solid lightgray;
+}
+
+.contacts__container-block {
+  display: flex;
+}
+
+.contacts__contacts {
+  width: calc(522 / 1600 * 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  border-right: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.contacts__map {
+  min-height: 320px;
+  width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); /* 1078 - в данном случае это ширина карты внутри контейнера, её можно менять */
+  margin-right: calc((-100vw + 100%) / 2);
+  margin-top: -1px;
+  transition-property: width, height, padding;
+  transition-duration: 100ms;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+
+.page-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  background-color: #0e294b;
+}
+
+.page-footer__text {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .contacts__contacts {
+    width: calc(437 / 924 * 100%);
+  }
+
+  .contacts__map {
+    width: calc(487 / 924 * 100% + ((100vw - 100%) / 2));
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__contacts {
+    width: calc(380 / 668 * 100%);
+  }
+
+  .contacts__map {
+    width: calc(288 / 668 * 100% + ((100vw - 100%) / 2));
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contacts__container-block {
+    flex-direction: column-reverse;
+  }
+
+  .contacts__wrap,
+  .contacts__contacts {
+    border: none;
+  }
+
+  .contacts__contacts,
+  .contacts__map {
+    width: calc(100% + 30px);
+  }
+
+  .contacts__map {
+    height: 320px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+/* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom *//* mybottom */
+
 .contacts__title {
   margin-top: 80px;
   margin-bottom: 15px;
@@ -3164,9 +2933,7 @@ input[type=number] {
 
 .contacts__content-left {
   flex: 1;
-  border-top: 1px solid black;
-  padding: 124px 121px 50px 0;
-  padding-left: max(50px, calc((100% - 1699px) / 2 + 50px) );
+  padding: 124px 121px 119px 0;
 
   min-width: 400px;
 }
@@ -3341,11 +3108,6 @@ input[type=number] {
 }
 
 
-
-[class*="ground-pane"] {
-  filter: grayscale(1);
-}
-
 /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
 
 .footer {
@@ -3392,7 +3154,7 @@ input[type=number] {
 
 /* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup *//* popup */
 
-.popup {
+/* .popup {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -3446,5 +3208,5 @@ input[type=number] {
 .popup-item {
   color: #000;
 }
-
+ */
 

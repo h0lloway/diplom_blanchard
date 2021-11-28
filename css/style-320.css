@@ -17,4 +17,14 @@
   .gallery__swiper-slide::before {
     padding-top: 110%;
   }
+
+
+  /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }

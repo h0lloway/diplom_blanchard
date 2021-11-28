@@ -240,11 +240,6 @@ const choices = new Choices(element, {
   placeholder: true,
 });
 
-// const choices = new Choices(element, {
-//   searchEnabled: false,
-//   itemSelectText: '',
-// });
-
 // accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion// accordion
 
 $(document).ready(function () {
@@ -256,17 +251,6 @@ $(document).ready(function () {
     $(this).toggleClass('active').next().slideToggle(300);
   });
 });
-
-// 2й аккордион
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   $(".js-accordion").accordion({
-//     collapsible: true,
-//     active: false,
-//     icons: false,
-//     heightStyle: 'content'
-//   });
-// });
 
 // events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events
 
@@ -316,7 +300,6 @@ window.addEventListener('resize', () => {
 });
 
 
-
 // publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox
 
 
@@ -327,71 +310,6 @@ window.addEventListener('resize', () => {
     this.classList.toggle('is-active');
   });
 })();
-
-
-
-
-// let button = ".checkbox__title";
-// let labels = ".checkbox--label";
-// let labelsList = ".checkbox-list";
-// let labelsListActive = "checklist-active";
-// let labelActive = "checkbox--label-active";
-// let animationClass = "animation-test";
-// let inputCheckbox = ".checkbox";
-
-// function checkboxToggle(a, b, c, labelsListActive, labelActive, animationClass, inputCheckbox) {
-//   let btn = document.querySelector(a);
-//   let labels = document.querySelectorAll(b);
-//   let listLabels = document.querySelector(c);
-//   btn.addEventListener("click", toggleSpoiler);
-//   btn.addEventListener("keyup", function (e) {
-//     console.log(e.key);
-//     if (e.code === "Enter") {
-//       toggleSpoiler();
-//     }
-//   })
-//   function toggleSpoiler() {
-//     if (!listLabels.classList.contains(labelsListActive)) {
-//       listLabels.classList.add(labelsListActive);
-//       labels.forEach(item => {
-//         // item.classList.add("checkbox--label-active");
-//         animationItem(item, labelActive, animationClass, "add");
-//       })
-//     } else {
-//       listLabels.classList.remove(labelsListActive);
-//       labels.forEach(item => {
-//         if (item.querySelector(inputCheckbox).checked) {
-//           animationItem(item, labelActive, animationClass, "add");
-//         } else {
-//           animationItem(item, labelActive, animationClass, "remove");
-//         }
-//       });
-//     }
-//     labels.forEach(item => {
-//       item.addEventListener("click", function () {
-//         if (!listLabels.classList.contains(labelsListActive)) {
-//           animationItem(this, labelActive, animationClass, "remove");
-//         }
-//       });
-//     })
-//   }
-//   function animationItem(item, class1, class2, f) {
-//     if (f === "add") {
-//       item.classList.add(class1);
-//       setTimeout(function () {
-//         item.classList.add(class2)
-//       }, 100);
-
-//     } else {
-//       item.classList.remove(class2);
-//       setTimeout(function () {
-//         item.classList.remove(class1)
-//       }, 300);
-//     }
-//   }
-// }
-
-// checkboxToggle(button, labels, labelsList, labelsListActive, labelActive, animationClass, inputCheckbox);
 
 
 // publications-slider// publications-slider// publications-slider// publications-slider// publications-slider// publications-slider// publications-slider// publications-slider// publications-slider
@@ -478,7 +396,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// swiper projects
+// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects// swiper projects
+
 
 const partnersSlider = document.querySelector('.partners__swiper-container');
 
@@ -511,55 +430,51 @@ var partnersSwiper = new Swiper(partnersSlider, {
 });
 
 
+// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map// yandex map
 
 
-// yandex map
-
-// Функция ymaps.ready() будет вызвана, когда
-// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
 function init() {
-  // Создание карты.
-  var myMap = new ymaps.Map("map", {
-    // Координаты центра карты.
-    // Порядок по умолчанию: «широта, долгота».
-    // Чтобы не определять координаты центра карты вручную,
-    // воспользуйтесь инструментом Определение координат.
-    center: [55.7630863, 37.6412295],
-    // Уровень масштабирования. Допустимые значения:
-    // от 0 (весь мир) до 19.
-    zoom: 14,
-    controls: []
-  }, {
-    suppressMapOpenBlock: true
-  });
-
-
-
-  // Создание геообъекта с типом точка (метка).
-  var myGeoObject = new ymaps.GeoObject({
-    geometry: {
-      type: "Point", // тип геометрии - точка
-      // coordinates: [48.872185, 2.354224] // координаты точки
+  const mapElem = document.querySelector('#map');
+  const myMap = new ymaps.Map(
+    "map",
+    {
+      center: [55.7630863, 37.6412295],
+      zoom: 14,
+      controls: ['geolocationControl', 'zoomControl']
+    },
+    {
+      suppressMapOpenBlock: true,
+      geolocationControlSize: "large",
+      geolocationControlPosition: { top: "200px", right: "20px" },
+      geolocationControlFloat: 'none',
+      zoomControlSize: "small",
+      zoomControlFloat: "none",
+      zoomControlPosition: { top: "120px", right: "20px" }
     }
-  });
+  );
 
+  const myPlacemark = new ymaps.Placemark(
+    [55.75846306898368, 37.601079499999905],
+    {},
+    {
+      iconLayout: "default#image",
+      iconImageHref: "img/location.svg",
+      iconImageSize: [20, 20],
+      iconImageOffset: [-20, -40],
+    }
+  );
 
-  var myPlacemark = new ymaps.Placemark([55.75846306898368, 37.601079499999905], {}, {
-    iconLayout: 'default#image',
-    iconImageHref: 'img/location.svg',
-    iconImageSize: [20, 20],
-    iconImageOffset: [-3, -42]
-  });
+  myMap.geoObjects.add(myPlacemark);
 
-  // Размещение геообъекта на карте.
-  myMap.geoObjects.add(myGeoObject);
-  myMap.geoObjects.add(myPlacemark)
+  setTimeout(() => {
+    myMap.container.fitToViewport();
+  }, 5000);
 }
 
 
+// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы
 
-// валидация формы
 
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999)-999-99-99");
@@ -594,6 +509,7 @@ new JustValidate('.contacts__form', {
 
 
 // tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips
+
 
 tippy('#myButton', {
   content: 'Пример современных тенденций - современная методология разработки',
