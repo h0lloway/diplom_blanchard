@@ -96,19 +96,63 @@
             <span>Войти</span>
           </button>
 
-          <div class="header__search-box">
-            <button class="header__mobile-search-btn mobile-search-btn my-btn" aria-hidden="true"
-              aria-label="Поиск по сайту">
-              <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="9.15446" height="2.28862"
-                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                  fill="white" />
-              </svg>
-            </button>
-            <input class="header__input" type="text" placeholder="Поиск">
+          <div class="search-container">
+            <div class="form-container">
+              <button class="form-btn__open"> <svg width="30" height="29" viewbox="0 0 30 29" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="9.15446" height="2.28862"
+                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                    fill="white" />
+                </svg>
+              </button>
+
+              <form action="/" class="form">
+                <button class="form-btn__submit">
+                  <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="9.15446" height="2.28862"
+                      transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <input class="form__input" type="text" placeholder="Поиск...">
+              </form>
+            </div>
           </div>
+
+
+
+
+          <!-- <div class="search-container">
+            <div class="form-container">
+              <button class="form-btn__open">
+                <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="9.15446" height="2.28862"
+                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                    fill="white" />
+                </svg>
+              </button>
+
+              <form class="header__search-box form">
+                <button class="header__mobile-search-btn mobile-search-btn my-btn" aria-hidden="true"
+                  aria-label="Поиск по сайту">
+                  <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="9.15446" height="2.28862"
+                      transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <input class="header__input" type="text" placeholder="Поиск">
+              </form>
+            </div>
+          </div> -->
 
         </div>
       </div>
@@ -762,7 +806,7 @@
 
               <ul class="catalog__accordion list-reset one">
                 <li class="catalog__accordion-item flex">
-                  <div class="catalog__accordion-wrap">
+                  <div class="catalog__accordion-wrap active">
                     <h3 class="catalog__accordion-title" tabindex="0">
                       C&nbsp;1400 по&nbsp;1499&nbsp;гг.
                     </h3>
@@ -1135,7 +1179,23 @@
     <section class="events" id="events">
 
       <div class="events__container container">
-        <h2 class="events__title common-title">
+
+        <div class="wrapper">
+          <div class="slider js-slider">
+            <ul class="slides-wrap js-slides-wrap list-reset">
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+            </ul>
+          </div>
+          <button class="btn js-show">Показать все</button>
+        </div>
+
+
+
+        <!-- <h2 class="events__title common-title">
           События
         </h2>
         <div class="events__swiper swiper" data-mobile="false">
@@ -1302,7 +1362,7 @@
         </div>
         <div class="btn-center flex">
           <button class="events__open-btn my-btn" aria-label="Открытие остальных событий">Все события</button>
-        </div>
+        </div> -->
       </div>
 
     </section>
@@ -1652,6 +1712,9 @@
         <div class="partners__swiper">
           <div class="partners__swiper-container swiper-container">
             <div class="swiper-wrapper partners__swiper-wrapper">
+
+
+
               <div class="swiper-slide partners__swiper-slide">
                 <a class="partners__swiper-slide-link" href="#"><img class="partners__swiper-slide-img"
                     src="img/8-projects/projects-img-1.png" alt="Логотип freelands foundation"></a>
@@ -1698,9 +1761,8 @@
               </div>
             </div>
           </div>
-
-          <div class="swiper-button-prev partners__button-prev"></div>
-          <div class="swiper-button-next partners__button-next"></div>
+          <button class="swiper-button-prev partners__button-prev my-btn"></button>
+          <button class="swiper-button-next partners__button-next my-btn"></button>
         </div>
 
       </div>
