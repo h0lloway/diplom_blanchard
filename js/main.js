@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 });
 
-document.querySelector(".form-btn__open").addEventListener("click", function () {
+document.querySelector(".form-btn-open").addEventListener("click", function () {
   document.querySelector(".form").classList.add("form__active");
   this.classList.add("active");
 })
@@ -49,7 +49,7 @@ document.addEventListener("click", function (e) {
   if (!target.closest(".form-container")) {
     form.classList.remove("form__active");
     form.querySelector(".form__input").value = "";
-    document.querySelector(".form-btn__open").classList.remove("active")
+    document.querySelector(".form-btn-open").classList.remove("active")
   }
 })
 
@@ -278,7 +278,7 @@ $(document).ready(function () {
     paginationClassName: "events-pagination",
     cardsContainerName: "js-slider",
     cardsWrapName: "js-slides-wrap",
-    card: "slide",
+    card: "events__list-item",
     hiddenClass: "is-hidden"
   };
 
@@ -566,6 +566,31 @@ var partnersSwiper = new Swiper(partnersSlider, {
       spaceBetween: 50,
       slidesPerView: 3,
       slidesPerGroup: 1,
+    }
+  },
+
+  // Дальнейшие надстройки делают слайды вне области видимости не фокусируемыми
+  watchSlidesProgress: true,
+  slideVisibleClass: 'slide-visible',
+
+  on: {
+    init: function () {
+      this.slides.forEach(slide => {
+        if (!slide.classList.contains('slide-visible')) {
+          slide.tabIndex = '-1';
+        } else {
+          slide.tabIndex = '';
+        }
+      });
+    },
+    slideChange: function () {
+      this.slides.forEach(slide => {
+        if (!slide.classList.contains('slide-visible')) {
+          slide.tabIndex = '-1';
+        } else {
+          slide.tabIndex = '';
+        }
+      });
     }
   }
 });

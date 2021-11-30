@@ -1,6 +1,6 @@
 @media (max-width: 1420px) {
   .header__list li {
-    margin: 0 0 0 34px;
+    margin: 0 0 0 25px;
   }
 
   .bottom__list-item:not(:last-child) {

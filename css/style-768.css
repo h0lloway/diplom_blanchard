@@ -1,5 +1,7 @@
 
 @media (max-width: 767.98px) {
+  /* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery */
+
   .gallery__top-left-elem,
   .gallery__right-elem {
     width: 100%;
@@ -19,7 +21,11 @@
     max-width: 300px;
   }
 
-  /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
+  .gallery__bottom-text {
+    position: static;
+  }
+
+  /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
 
   .catalog {
     padding-top: 40px;
