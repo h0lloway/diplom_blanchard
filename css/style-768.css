@@ -1,12 +1,64 @@
-
 @media (max-width: 767.98px) {
+  /* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero */
+
+  .hero__container {
+    padding: 0 45px 0 50px;
+  }
+
+  .hero__fade-slide:nth-child(1) {
+    background-image: url(../img/2-hero/hero-img-1-768.jpg);
+  }
+
+  .hero__fade-slide:nth-child(2) {
+    background-image: url(../img/2-hero/hero-img-2-768.jpg);
+  }
+
+  .hero__fade-slide:nth-child(3) {
+    background-image: url(../img/2-hero/hero-img-3-768.jpg);
+  }
+
+  .hero__fade-slide:nth-child(4) {
+    background-image: url(../img/2-hero/hero-img-1-768.jpg);
+  }
+
+  .hero__fade-slide:nth-child(5) {
+    background-image: url(../img/2-hero/hero-img-2-768.jpg);
+  }
+
+  .hero__fade-slide:nth-child(6) {
+    background-image: url(../img/2-hero/hero-img-3-768.jpg);
+  }
+
+  .hero__info {
+    padding-bottom: 114px;
+  }
+
+  .hero__descr {
+    margin-top: 10px;
+  }
+
+  /* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us */
+
+  .about-us__container {
+    padding: 80px 39px 0 49px;
+  }
+
+
   /* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery *//* gallery */
+
+  .gallery__container {
+    padding: 0 32px 0 49px;
+  }
 
   .gallery__top-left-elem,
   .gallery__right-elem {
     width: 100%;
     margin-left: 0;
     margin-bottom: 20px;
+  }
+
+  .gallery__right-elem {
+    margin-top: 29px;
   }
 
   .gallery__bot-left-elem {
@@ -25,37 +77,74 @@
     position: static;
   }
 
+  .choices__inner {
+    width: 94%;
+  }
+
+  .choices[data-type*=select-one]:after {
+    right: 34.7px;
+  }
+
+  .choices:focus {
+    background: none;
+    border-radius: 6px;
+  }
+
+  .choices__list--dropdown {
+    width: 94%;
+  }
+
+  .gallery__swiper-slide::before {
+    padding-top: 86.6%;
+  }
+
   /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
 
   .catalog {
-    padding-top: 40px;
+    padding-top: 75px;
+  }
+
+  .catalog__container {
+    padding: 0 32px 0 50px;
   }
 
   .catalog__head {
     flex-wrap: wrap;
   }
 
+  .catalog__content-left {
+    width: 100%;
+  }
+
   .accordion__painter-list {
     max-height: 840px;
   }
 
+  .catalog__head {
+    margin-bottom: 13px;
+  }
+
   .catalog__tabs {
-    margin-top: 11px;
+    margin-top: 6px;
   }
 
   .catalog__tabs-btn {
-    width: 32px;
+    /* width: 32px;
     height: 32px;
-    background-size: 30px;
+    background-size: 30px; */
     padding: 20px;
   }
 
   .catalog__tabs-item:not(:last-child) {
-    margin-right: 22px;
+    margin-right: 30px;
+  }
+
+  .catalog__accordion {
+    padding-bottom: 51px;
   }
 
   .catalog__country-info {
-    display: none;
+    max-width: 100%;
   }
 
   .accordion {
@@ -93,6 +182,10 @@
     top: 10px;
   }
 
+  .catalog__painter-list {
+    column-count: 3;
+  }
+
   .painter {
     padding-left: 0px;
   }
@@ -105,10 +198,131 @@
   .painter__name {
     margin-bottom: 13px;
   }
+
   .painter__info {
     max-width: 99%;
   }
 
   /* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events */
+
+  .events__container {
+    padding-top: 69px;
+  }
+
+  .events__list-item {
+    width: calc(94.5% / 2 - 20px);
+    margin-right: 32px;
+  }
+
+  .events__list-item:nth-child(3n+3) {
+    margin-right: 32px;
+  }
+
+  .events__card-body {
+    padding-top: 3px
+  }
+
+
+
+  .events__btn {
+    margin-top: 61px;
+  }
+
+
+  .events__open-btn {
+    margin-bottom: 81px;
+  }
+
+  /* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications */
+
+  .publications {
+    padding-top: 102px;
+    padding-bottom: 50px;
+
+    background-image: url(../img/7-publications/publications-background-768.jpg);
+  }
+
+  .publications__checkbox-wrap {
+    display: block;
+    column-count: 3;
+
+    margin-bottom: 0;
+  }
+
+  .publications__title {
+    margin-bottom: 17px;
+  }
+
+  .publications-price {
+    width: 41.5%;
+    padding-top: 16px;
+  }
+
+  .publications-swiper {
+    margin-left: 0px;
+  }
+
+  .publications__button {
+    margin-top: 17px;
+  }
+
+  .projects__subtitle {
+    margin-top: 25px;
+    margin-bottom: 29px;
+  }
+
+  .partners__swiper-slide-link {
+    height: 92px;
+    padding: 6px;
+  }
+
+  /* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts */
+
+  .contacts__container {
+    padding: 0 50px;
+  }
+
+  .contacts__container-block {
+    padding-left: 50px;
+  }
+
+  .contacts__content-left {
+    min-width: 380px;
+    padding: 124px 44px 120px 0;
+  }
+
+  .contacts__map {
+    width: calc(292 / 668 * 100% + ((100vw - 100%) / 2));
+  }
+
+  .contacts__bottom-link svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .telegram-link {
+    margin-left: 30px;
+  }
+
+  /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+
+  .footer__container {
+    padding: 0 31px 0 51px;
+  }
+
+  .footer__link svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__content {
+    padding: 40px 0;
+  }
+
+  .footer__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+
 
 }

@@ -395,52 +395,6 @@ $(document).ready(function () {
 })();
 
 
-// let btn = document.querySelector(".events__open-btn");
-// const slider = document.querySelector('.events__swiper');
-// let allitems = document.querySelectorAll(".events__list-item");
-// btn.addEventListener("click", function () {
-//   allitems.forEach(item => {
-//     item.style.display = "block";
-//   })
-
-//   this.style.display = "none";
-
-// })
-
-
-// let mySwiper;
-
-// function mobileSlider() {
-//   if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
-//     mySwiper = new Swiper(slider, {
-//       slidesPerView: 1,
-//       spaceBetween: 10,
-//       loop: true,
-//       slideClass: 'events__list-item',
-//       pagination: {
-//         el: '.events__swiper-pagination',
-//         clickable: true,
-//       },
-//     });
-
-//     slider.dataset.mobile = 'true';
-//   }
-
-//   if (window.innerWidth > 767 && slider.dataset.mobile == 'true') {
-//     slider.dataset.mobile = 'false';
-//     if (slider.classList.contains('swiper-container-initialized')) {
-//       mySwiper.destroy();
-//     }
-//   }
-// }
-
-// mobileSlider()
-
-// window.addEventListener('resize', () => {
-//   mobileSlider();
-// });
-
-
 // publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox// publications-checkbox
 
 
@@ -568,31 +522,6 @@ var partnersSwiper = new Swiper(partnersSlider, {
       slidesPerGroup: 1,
     }
   },
-
-  // Дальнейшие надстройки делают слайды вне области видимости не фокусируемыми
-  watchSlidesProgress: true,
-  slideVisibleClass: 'slide-visible',
-
-  on: {
-    init: function () {
-      this.slides.forEach(slide => {
-        if (!slide.classList.contains('slide-visible')) {
-          slide.tabIndex = '-1';
-        } else {
-          slide.tabIndex = '';
-        }
-      });
-    },
-    slideChange: function () {
-      this.slides.forEach(slide => {
-        if (!slide.classList.contains('slide-visible')) {
-          slide.tabIndex = '-1';
-        } else {
-          slide.tabIndex = '';
-        }
-      });
-    }
-  }
 });
 
 
@@ -677,29 +606,36 @@ new JustValidate('.contacts__form', {
 // tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips
 
 
-tippy('#myButton', {
-  content: 'Пример современных тенденций - современная методология разработки',
+tippy('.js-tooltip', {
   theme: 'projects-tooltip',
-  maxWidth: 264,
   trigger: 'click',
-  trigger: 'focus'
+  trigger: 'focus',
+  maxWidth: 264
 });
 
-tippy('#myButton-2', {
-  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
-  theme: 'projects-tooltip',
-  maxWidth: 264,
-  trigger: 'click',
-  trigger: 'focus'
-});
+// tippy('#myButton', {
+//   content: 'Пример современных тенденций - современная методология разработки',
+//   theme: 'projects-tooltip',
+//   maxWidth: 264,
+//   trigger: 'click',
+//   trigger: 'focus'
+// });
 
-tippy('#myButton-3', {
-  content: 'В стремлении повысить качество',
-  theme: 'projects-tooltip',
-  maxWidth: 232,
-  trigger: 'click',
-  trigger: 'focus'
-});
+// tippy('#myButton-2', {
+//   content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+//   theme: 'projects-tooltip',
+//   maxWidth: 264,
+//   trigger: 'click',
+//   trigger: 'focus'
+// });
+
+// tippy('#myButton-3', {
+//   content: 'В стремлении повысить качество',
+//   theme: 'projects-tooltip',
+//   maxWidth: 232,
+//   trigger: 'click',
+//   trigger: 'focus'
+// });
 
 
 // popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup
