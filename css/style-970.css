@@ -1,0 +1,76 @@
+@media (max-width: 970px) {
+
+
+  /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
+
+  .catalog__tab-content {
+    flex-direction: column;
+  }
+
+  .accordion {
+    margin-left: 0;
+    max-width: 100%;
+    order: 1;
+  }
+
+  .painter {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .catalog__tabs {
+    margin-top: 9px;
+  }
+
+  .catalog__tabs-item:not(:last-child) {
+    margin-right: 34px;
+  }
+
+  .catalog__head {
+    margin-bottom: 12px;
+  }
+
+  .catalog__country-info {
+    margin-bottom: 19px;
+  }
+
+  /* .catalog__painter-list {
+    max-height: 343px;
+  } */
+
+  .painter__photo {
+    margin-bottom: 29px;
+    margin-top: 51px;
+  }
+
+  .catalog__content-left {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .catalog__content-right {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events */
+
+  .events__list-item {
+    width: calc(100% / 2 - 20px);
+  }
+
+  /* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects */
+
+  .projects__descr {
+    margin-bottom: 27px;
+  }
+
+  .partners__swiper-slide-link {
+    height: 105px;
+  }
+
+  .partners__swiper-container {
+    max-width: 85%;
+  }
+
+}

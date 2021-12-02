@@ -516,7 +516,7 @@ var partnersSwiper = new Swiper(partnersSlider, {
       spaceBetween: 30,
     },
 
-    1600: {
+    1400: {
       spaceBetween: 50,
       slidesPerView: 3,
       slidesPerGroup: 1,
@@ -570,7 +570,6 @@ function init() {
 
 // валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы// валидация формы
 
-
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999)-999-99-99");
 
@@ -602,7 +601,6 @@ new JustValidate('.contacts__form', {
   },
 });
 
-
 // tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips
 
 
@@ -613,88 +611,63 @@ tippy('.js-tooltip', {
   maxWidth: 264
 });
 
-// tippy('#myButton', {
-//   content: 'Пример современных тенденций - современная методология разработки',
-//   theme: 'projects-tooltip',
-//   maxWidth: 264,
-//   trigger: 'click',
-//   trigger: 'focus'
-// });
-
-// tippy('#myButton-2', {
-//   content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
-//   theme: 'projects-tooltip',
-//   maxWidth: 264,
-//   trigger: 'click',
-//   trigger: 'focus'
-// });
-
-// tippy('#myButton-3', {
-//   content: 'В стремлении повысить качество',
-//   theme: 'projects-tooltip',
-//   maxWidth: 232,
-//   trigger: 'click',
-//   trigger: 'focus'
-// });
-
-
 // popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup// popup
+// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll// disabledScroll
 
 
-// const popupLinks = document.querySelectorAll('.popup-link');
-// const body = document.querySelector('body');
-// const lockPadding = document.querySelectorAll(".lock-padding");
+const btns = document.querySelectorAll('.js-open-modal');
+const modalOverlay = document.querySelector('.modal-overlay');
+const modals = document.querySelectorAll('.modal');
+const body = document.body;
+const fixBlocks = document.querySelectorAll('.fix-block');
 
-// let unlock = true;
+let disableScroll = function () {
+  let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
+	let pagePosition = window.scrollY;
+  fixBlocks.forEach((el) => {
+		el.style.paddingRight = paddingOffset;
+	});
+	body.style.paddingRight = paddingOffset;
+	body.classList.add('disable-scroll');
+	body.dataset.position = pagePosition;
+	body.style.top = -pagePosition + 'px';
+}
 
-// const timeout = 800;
+let enableScroll = function () {
+	let pagePosition = parseInt(document.body.dataset.position, 10);
+	body.style.top = 'auto';
+	body.classList.remove('disable-scroll');
+  fixBlocks.forEach((el) => {
+		el.style.paddingRight = '0px';
+	});
+	body.style.paddingRight = '0px';
+	window.scroll({top: pagePosition, left: 0});
+	body.removeAttribute('data-position');
+}
 
-// if (popupLinks.length > 0) {
-//   for (let index = 0; index < popupLinks.length; index++) {
-//     const popupLink = popupLinks[index];
-//     popupLink.addEventListener("click", function (e) {
-//       const popupName = popupLink.getAttribute('href').replace('#', '');
-//       const curentPopup = document.getElementById(popupName);
-//       popupOpen(curentPopup);
-//       e.preventDefault();
-//     });
-//   }
-// }
+btns.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    let path = e.currentTarget.getAttribute('data-path');
 
-// const popupCloseIcon = document.querySelectorAll('.close-popup');
-// if (popupCloseIcon.length > 0) {
-//   for (let index = 0; index < popupCloseIcon.length; index++) {
-//     const el = popupCloseIcon[index];
-//     el.addEventListener('click', function (e) {
-//       popupClose(el.closest('.popup'));
-//       e.preventDefault();
-//     });
-//   }
-// }
+    disableScroll();
 
-// function popupOpen(curentPopup) {
-//   if (curentPopup && unlock) {
-//     const popupActive = document.querySelector('.popup.popup--open');
-//     if (popupActive) {
-//       popupClose(popupActive, false);
-//     } else {
-//       bodyLock();
-//     }
-//     curentPopup.classList.add('popup--open');
-//     curentPopup.addEventListener("click", function (e) {
-//       if (!e.target.closest('.popup__content')) {
-//           popupClose(e.target.closest('.popup'));
-//       }
-//     });
-//   }
-// }
+    modals.forEach((el) => {
+      el.classList.remove('modal--visible');
+    });
 
-// function bodyLock() {
-//   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+    document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+    modalOverlay.classList.add('modal-overlay--visible');
+  });
+});
 
-//   for (let index = 0; index < lockPadding.length; index++) {
-//     const el = lockPadding[index];
-//     el.style.paddingRight = lockPaddingValue;
-//   }
-// }
+modalOverlay.addEventListener('click', (e) => {
 
+  enableScroll();
+
+  if (e.target == modalOverlay) {
+    modalOverlay.classList.remove('modal-overlay--visible');
+    modals.forEach((el) => {
+      el.classList.remove('modal--visible');
+    });
+  }
+});

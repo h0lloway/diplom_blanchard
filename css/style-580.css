@@ -1,0 +1,32 @@
+@media (max-width: 580px) {
+
+  /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
+
+  .catalog__painter-list {
+    column-count: 2;
+  }
+
+  /* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts */
+
+  .contacts__container-block {
+    flex-direction: column-reverse;
+  }
+
+  .contacts__wrap,
+  .contacts__contacts {
+    border: none;
+  }
+
+  .contacts__contacts,
+  .contacts__map {
+    width: calc(100% + 30px);
+  }
+
+  .contacts__map {
+    height: 320px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+
+}

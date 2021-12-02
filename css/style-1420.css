@@ -1,3 +1,91 @@
+@media (max-width: 1420px) {
+
+  /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
+
+  .header__list li {
+    margin: 0 0 0 30px;
+  }
+
+  .bottom__list-item:not(:last-child) {
+    margin-right: 60px;
+  }
 
 
+  /* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications */
 
+  .publications {
+    padding-top: 97px;
+    padding-bottom: 79px;
+  }
+
+  .publications__container {
+    padding-left: 50px;
+  }
+
+  .publications-swiper {
+    padding-top: 16px;
+    padding-left: 0;
+    width: calc(1094 / 1600 * 100%);
+  }
+
+  .publications-navigation {
+    width: 131px;
+  }
+
+  .publications-prev {
+    margin-right: 5px;
+  }
+
+  .publications__list {
+    padding-top: 30px;
+  }
+
+  .publications-info {
+    padding-top: 9px;
+  }
+
+  .publications-span {
+    top: 9px;
+  }
+
+  .publications__subtitle {
+    padding-top: 33px;
+  }
+
+  .publications-price__form {
+    margin-top: 6px;
+  }
+
+  .publications-price__label {
+    padding-right: 10px;
+  }
+
+  .publications-price__input_ot {
+    margin-top: 0px;
+    padding-left: 9px;
+    width: 73px;
+  }
+
+  .publications-price__label-to {
+    padding-right: 10px;
+    padding-left: 9.5px;
+  }
+
+  .publications-price__input_to {
+    margin-top: 0px;
+    padding-left: 9px;
+    width: 73px;
+    letter-spacing: 1px;
+  }
+
+  .publications-price__label-val {
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+
+  /* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects */
+
+  .projects__descr {
+    max-width: 80%;
+  }
+}

@@ -1,4 +1,14 @@
 @media (max-width: 767.98px) {
+  /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
+
+  .form {
+    width: 669px;
+  }
+
+  .form__input {
+    width: 92%;
+  }
+
   /* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero */
 
   .hero__container {
@@ -108,10 +118,6 @@
     padding: 0 32px 0 50px;
   }
 
-  .catalog__head {
-    flex-wrap: wrap;
-  }
-
   .catalog__content-left {
     width: 100%;
   }
@@ -129,9 +135,6 @@
   }
 
   .catalog__tabs-btn {
-    /* width: 32px;
-    height: 32px;
-    background-size: 30px; */
     padding: 20px;
   }
 
@@ -258,10 +261,6 @@
     padding-top: 16px;
   }
 
-  .publications-swiper {
-    margin-left: 0px;
-  }
-
   .publications__button {
     margin-top: 17px;
   }
@@ -271,9 +270,61 @@
     margin-bottom: 29px;
   }
 
+  .partners__swiper-slide-img {
+    width: 82%;
+    height: 57%;
+  }
+
   .partners__swiper-slide-link {
     height: 92px;
     padding: 6px;
+  }
+
+  /*--publications 768px--*//*--publications 768px--*//*--publications 768px--*//*--publications 768px--*//*--publications 768px--*//*--publications 768px--*//*--publications 768px--*/
+
+  .publications-wrap {
+    flex-direction: column;
+  }
+
+  .publications-left {
+    max-width: 100%;
+  }
+
+  .publications-navigation {
+    margin-left: -27px;
+  }
+
+  .publications-swiper {
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-top: 49px;
+    padding-left: 27px;
+    width: calc(1538 / 1600 * 100%);
+  }
+
+  .publications__h3-price {
+    padding-top: 0;
+  }
+
+  .publications-price__form {
+    margin-top: 6px;
+  }
+
+  .publications-price__input {
+    padding-left: 9px;
+  }
+
+  .publications__list {
+    padding-top: 28px;
+  }
+
+  .publications-info {
+    padding-top: 11px;
+  }
+
+  .publications-span {
+    top: 10px;
+    right: .5px;
   }
 
   /* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts */
@@ -288,7 +339,7 @@
 
   .contacts__content-left {
     min-width: 380px;
-    padding: 124px 44px 120px 0;
+    padding: 124px 44px 119px 0;
   }
 
   .contacts__map {
@@ -317,6 +368,10 @@
 
   .footer__content {
     padding: 40px 0;
+  }
+
+  .footer__content img {
+    margin-top: 10px;
   }
 
   .footer__list-item:not(:last-child) {

@@ -1,0 +1,27 @@
+@media (max-width: 750px) {
+
+  /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
+
+  .catalog__head {
+    flex-wrap: wrap;
+  }
+
+  /* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects */
+
+  .projects {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+
+  .projects__title {
+    margin-bottom: 15px;
+  }
+
+  .partners__swiper-container {
+    max-width: 65%;
+  }
+
+  .partners__swiper-slide-link {
+    height: 65px;
+  }
+}
