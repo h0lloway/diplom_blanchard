@@ -102,6 +102,9 @@
 
   .choices__list--dropdown {
     width: 94%;
+
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .gallery__swiper-slide::before {
