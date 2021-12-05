@@ -3,7 +3,7 @@
   /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
 
   .header__list li {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 25px;
   }
 
   .bottom__list-item:not(:last-child) {
@@ -12,11 +12,6 @@
 
 
   /* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications */
-
-  .publications {
-    padding-top: 97px;
-    padding-bottom: 79px;
-  }
 
   .publications__container {
     padding-left: 50px;

@@ -1,5 +1,14 @@
 @media (max-width: 750px) {
 
+  /* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero */
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 108%;
+    color: var(--white-color);
+  }
+
   /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
 
   .catalog__head {

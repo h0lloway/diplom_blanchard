@@ -3,11 +3,29 @@
 
   .form {
     width: 669px;
+
+    padding: 10px 3px 10px 12px;
+    top: -112%;
+
+    background-color: #000;
   }
 
   .form__input {
-    width: 92%;
+    width: 89%;
+
+    background-color: #000;
   }
+
+  .form-btn-close {
+    display: block;
+    padding-left: 10px;
+  }
+
+  .form-btn-close svg path {
+    fill: #fff;
+  }
+
+
 
   /* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero */
 
@@ -260,7 +278,6 @@
   }
 
   .publications-price {
-    width: 41.5%;
     padding-top: 16px;
   }
 
@@ -271,11 +288,6 @@
   .projects__subtitle {
     margin-top: 25px;
     margin-bottom: 29px;
-  }
-
-  .partners__swiper-slide-img {
-    width: 82%;
-    height: 57%;
   }
 
   .partners__swiper-slide-link {

@@ -39,7 +39,6 @@
   <link rel="stylesheet" href="css/style-768.css">
   <link rel="stylesheet" href="css/style-750.css">
   <link rel="stylesheet" href="css/style-580.css">
-  <link rel="stylesheet" href="css/style-337.css">
   <link rel="stylesheet" href="css/style-320.css">
 
 
@@ -125,8 +124,19 @@
                       fill="white" />
                   </svg>
                 </button>
-                <input class="form__input" type="text" placeholder="Поиск...">
+                <input class="form__input" type="text" >
+                <a class="form-btn-close my-btn">
+                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </a>
               </form>
+
             </div>
           </div>
         </div>
@@ -306,7 +316,8 @@
           <form class="bottom-form" action="https://jsonplaceholder.typicode.com/posts " method="POST">
             <div class="bottom__search-box">
               <button class="bottom__search-btn my-btn" aria-label="Поиск по сайту" tabindex="-1">
-                <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bottom__search-btn-img" width="23" height="22" viewbox="0 0 23 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <rect width="6.8678" height="1.71695"
                     transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -854,8 +865,8 @@
 
               <ul class="catalog__accordion list-reset one">
                 <li class="catalog__accordion-item flex">
-                  <div class="catalog__accordion-wrap active">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap active" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;1400 по&nbsp;1499&nbsp;гг.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -976,8 +987,8 @@
                 </li>
 
                 <li class="catalog__accordion-item">
-                  <div class="catalog__accordion-wrap">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;1500 по&nbsp;1599&nbsp;гг.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -1008,8 +1019,8 @@
                 </li>
 
                 <li class="catalog__accordion-item">
-                  <div class="catalog__accordion-wrap">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;1600 по&nbsp;1699&nbsp;гг.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -1040,8 +1051,8 @@
                 </li>
 
                 <li class="catalog__accordion-item">
-                  <div class="catalog__accordion-wrap">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;1700 по&nbsp;1799&nbsp;гг.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -1072,8 +1083,8 @@
                 </li>
 
                 <li class="catalog__accordion-item">
-                  <div class="catalog__accordion-wrap">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;1800 по&nbsp;1899&nbsp;гг.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -1104,8 +1115,8 @@
                 </li>
 
                 <li class="catalog__accordion-item">
-                  <div class="catalog__accordion-wrap">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;1900 по&nbsp;1999&nbsp;гг.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -1136,8 +1147,8 @@
                 </li>
 
                 <li class="catalog__accordion-item">
-                  <div class="catalog__accordion-wrap">
-                    <h3 class="catalog__accordion-title" tabindex="0">
+                  <div class="catalog__accordion-wrap" tabindex="0">
+                    <h3 class="catalog__accordion-title">
                       C&nbsp;2000&nbsp;г.
                     </h3>
                     <svg class="accordion-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
@@ -1646,7 +1657,8 @@
                 </picture>
                 <div class="publications-info">
                   <h3 class="publications__book-name">Николай Ильин</h3>
-                  <span>Гордон, Юрий</span><span class="none-320">мир</span>
+                  <span>Кричевский, Влади...</span>
+                  <span class="none-320">мир</span>
                   <span class="publications-span">1&nbsp;100 руб</span>
                   <button class="publications__button my-btn">Заказать</button>
                 </div>
@@ -2003,7 +2015,7 @@
           <source srcset="img/10-footer/footer__logo-320.png" media="(max-width: 575.98px)">
           <source srcset="img/10-footer/footer__logo-768.png" media="(max-width: 767.98px)">
           <source srcset="img/10-footer/footer__logo-1024.png" media="(max-width: 1199.98px)">
-          <img src="img/10-footer/footer__logo.png" alt="Лого галереи">
+          <img class="footer__logo" src="img/10-footer/footer__logo.png" alt="Лого галереи">
         </picture>
 
 

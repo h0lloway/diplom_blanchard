@@ -17,13 +17,12 @@ $(document).ready(function () {
 });
 
 
-
 // burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger// burger
 
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
     $('.header__burger,.header__menu').toggleClass('active');
-    $('body').toggleClass('lock');
+    // $('body').toggleClass('lock');
   });
 });
 
@@ -41,7 +40,13 @@ $(document).ready(function () {
 document.querySelector(".form-btn-open").addEventListener("click", function () {
   document.querySelector(".form").classList.add("form__active");
   this.classList.add("active");
-})
+});
+
+document.querySelector('.form-btn-close').addEventListener('click', function(event){
+  document.querySelector('.form').classList.remove('form__active');
+  document.querySelector('.form-btn-open').classList.remove('active');
+  // this.classList.remove("active");
+});
 
 document.addEventListener("click", function (e) {
   let target = e.target;
@@ -52,6 +57,8 @@ document.addEventListener("click", function (e) {
     document.querySelector(".form-btn-open").classList.remove("active")
   }
 })
+
+
 
 // menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu// menu
 
@@ -270,7 +277,7 @@ $(document).ready(function () {
 // events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events
 
 (() => {
-  const MOBILE_WIDTH = 580;
+  const MOBILE_WIDTH = 575;
   const DESKTOP_WIDTH = 961;
   const btn = document.querySelector(".js-show");
 
@@ -441,6 +448,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Стили для издания
     breakpoints: {
+      310: {
+        slidesPerView: 2,
+        // slidesPerColumn: 4,(от Swiper-а 6-ой версии)
+        grid: { rows: 4 },//(от Swiper-а 7-ая версия)
+        spaceBetween: 30
+      },
+
       320: {
         slidesPerView: 2,
         // slidesPerColumn: 4,(от Swiper-а 6-ой версии)
@@ -499,7 +513,7 @@ const partnersSlider = document.querySelector('.partners__swiper-container');
 var partnersSwiper = new Swiper(partnersSlider, {
   slideClass: ('partners__swiper-slide'),
   slidesPerView: "auto",
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
   // loop: true,
   spaceBetween: 30,
 
@@ -514,6 +528,12 @@ var partnersSwiper = new Swiper(partnersSlider, {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 30,
+    },
+
+    1024: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 46,
     },
 
     1400: {
@@ -623,26 +643,26 @@ const fixBlocks = document.querySelectorAll('.fix-block');
 
 let disableScroll = function () {
   let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px';
-	let pagePosition = window.scrollY;
+  let pagePosition = window.scrollY;
   fixBlocks.forEach((el) => {
-		el.style.paddingRight = paddingOffset;
-	});
-	body.style.paddingRight = paddingOffset;
-	body.classList.add('disable-scroll');
-	body.dataset.position = pagePosition;
-	body.style.top = -pagePosition + 'px';
+    el.style.paddingRight = paddingOffset;
+  });
+  body.style.paddingRight = paddingOffset;
+  body.classList.add('disable-scroll');
+  body.dataset.position = pagePosition;
+  body.style.top = -pagePosition + 'px';
 }
 
 let enableScroll = function () {
-	let pagePosition = parseInt(document.body.dataset.position, 10);
-	body.style.top = 'auto';
-	body.classList.remove('disable-scroll');
+  let pagePosition = parseInt(document.body.dataset.position, 10);
+  body.style.top = 'auto';
+  body.classList.remove('disable-scroll');
   fixBlocks.forEach((el) => {
-		el.style.paddingRight = '0px';
-	});
-	body.style.paddingRight = '0px';
-	window.scroll({top: pagePosition, left: 0});
-	body.removeAttribute('data-position');
+    el.style.paddingRight = '0px';
+  });
+  body.style.paddingRight = '0px';
+  window.scroll({ top: pagePosition, left: 0 });
+  body.removeAttribute('data-position');
 }
 
 btns.forEach((el) => {
