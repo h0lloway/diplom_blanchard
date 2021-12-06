@@ -65,6 +65,13 @@
     margin-top: 10px;
   }
 
+  .hero__title {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 108%;
+    color: var(--white-color);
+  }
+
   /* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us *//* about-us */
 
   .about-us__container {
@@ -148,6 +155,7 @@
   }
 
   .catalog__head {
+    flex-wrap: wrap;
     margin-bottom: 13px;
   }
 
@@ -340,6 +348,25 @@
   .publications-span {
     top: 10px;
     right: .5px;
+  }
+
+  /* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects */
+
+  .projects {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+
+  .projects__title {
+    margin-bottom: 15px;
+  }
+
+  .partners__swiper-container {
+    max-width: 65%;
+  }
+
+  .partners__swiper-slide-link {
+    height: 65px;
   }
 
   /* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts *//* contacts */

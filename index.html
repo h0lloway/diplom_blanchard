@@ -37,8 +37,6 @@
   <link rel="stylesheet" href="css/style-1024.css">
   <link rel="stylesheet" href="css/style-970.css">
   <link rel="stylesheet" href="css/style-768.css">
-  <link rel="stylesheet" href="css/style-750.css">
-  <link rel="stylesheet" href="css/style-580.css">
   <link rel="stylesheet" href="css/style-320.css">
 
 
@@ -104,7 +102,7 @@
 
           <div class="search-container">
             <div class="form-container">
-              <button class="form-btn-open my-btn">
+              <button class="form-btn-open my-btn" aria-label="Открыть форму поиска">
                 <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="9.15446" height="2.28862"
                     transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
@@ -115,7 +113,7 @@
               </button>
 
               <form action="/" class="form">
-                <button class="form-btn-submit my-btn" type="submit">
+                <button class="form-btn-submit my-btn" type="submit" aria-label="Отправить запрос">
                   <svg width="30" height="29" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="9.15446" height="2.28862"
                       transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
@@ -124,7 +122,7 @@
                       fill="white" />
                   </svg>
                 </button>
-                <input class="form__input" type="text" >
+                <input class="form__input" type="text">
                 <a class="form-btn-close my-btn">
                   <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -767,9 +765,9 @@
             функционально разнесены на&nbsp;независимые элементы.
           </p>
           <div class="catalog__tab-content">
-            <div class="catalog__content-left painter painter-content-active" data-tabs-target="Domenico_Ghirlandaio">
-              <img src="img/5-catalog/ghirlandaio.jpg" alt="портрет художника Доменико Гирландайо">
-              <h3 class="catalog__content-title">Доменико Гирландайо</h3>
+            <div class="catalog__content-left painter painter-content-active" data-tabs-target="Domenico_Ghirlandaio" id="domeniko">
+              <img src="img/5-catalog/ghirlandaio.jpg" alt="портрет художника Доменико Гирландайо" >
+              <h3 class="catalog__content-title" >Доменико Гирландайо</h3>
               <span class="catalog__content-years">2&nbsp;июня 1448&nbsp;&mdash; 11&nbsp;января 1494</span>
               <p class="catalog__content-txt">
                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
@@ -780,7 +778,7 @@
                 граждане Флоренции в&nbsp;костюмах того времени).
               </p>
             </div>
-            <div class="catalog__content-left painter" data-tabs-target="Binedetto">
+            <div class="catalog__content-left painter" data-tabs-target="Binedetto" id="binedetto">
               <img src="img/5-catalog/de_bindo.jpg" alt="портрет художника Бенедетто ди Биндо">
               <h3 class="catalog__content-title">Бенедетто ди&nbsp;Биндо</h3>
               <span class="catalog__content-years">ок. 1380&ndash;85&nbsp;&mdash; 19&nbsp;сентября 1417</span>
@@ -800,7 +798,7 @@
                 Джованни да&nbsp;Милано.
               </p>
             </div>
-            <div class="catalog__content-left painter" data-tabs-target="Bergonyone">
+            <div class="catalog__content-left painter" data-tabs-target="Bergonyone" id="bergonyone">
               <img src="img/5-catalog/bergognone.jpg" style="height: 500px; background-position: top;"
                 alt="портрет художника Бенедетто ди Биндо">
               <h3 class="catalog__content-title">Бергоньоне, Амброджо</h3>
@@ -816,7 +814,7 @@
                 в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.
               </p>
             </div>
-            <div class="catalog__content-left painter" data-tabs-target="Bissolo">
+            <div class="catalog__content-left painter" data-tabs-target="Bissolo" id="bissolo">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет информации по художнику">
               <h3 class="catalog__content-title">Что мы о нём знаем?3</h3>
               <span class="catalog__content-years"></span>
@@ -825,7 +823,7 @@
               </p>
               <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
-            <div class="catalog__content-left painter" data-tabs-target="Boltraffio">
+            <div class="catalog__content-left painter" data-tabs-target="Boltraffio" id="boltraffio">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет информации по художнику">
               <h3 class="catalog__content-title">Что мы о нём знаем?4</h3>
               <span class="catalog__content-years"></span>
@@ -834,7 +832,7 @@
               </p>
               <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
-            <div class="catalog__content-left painter" data-tabs-target="Bonsinyori">
+            <div class="catalog__content-left painter" data-tabs-target="Bonsinyori" id="bonsinyori">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет информации по художнику">
               <h3 class="catalog__content-title">Что мы о нём знаем?5</h3>
               <span class="catalog__content-years"></span>
@@ -843,7 +841,7 @@
               </p>
               <a class="catalog__painer-btn my-btn" aria-label="Переход в Галерею" href="#gallery">В галерею</a>
             </div>
-            <div class="catalog__content-left painter" data-tabs-target="Bottichini">
+            <div class="catalog__content-left painter" data-tabs-target="Bottichini" id="bottichini">
               <img src="img/5-catalog/tab-unknown-artist.jpg" alt="Нет информации по художнику">
               <h3 class="catalog__content-title">Что мы о нём знаем?6</h3>
               <span class="catalog__content-years"></span>
@@ -885,27 +883,27 @@
 
 
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link" href="#" data-tabs-path="Binedetto"
+                        <a class="catalog__painter-link" href="#binedetto" data-tabs-path="Binedetto"
                           aria-label="Переход на художника Бенедетто ди Биндо">Бенедетто ди Биндо</a>
                       </li>
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link" href="#" data-tabs-path="Bergonyone"
+                        <a class="catalog__painter-link" href="#bergonyone" data-tabs-path="Bergonyone"
                           aria-label="Переход на художника Бергоньоне, Амброджо">Бергоньоне, Амброджо</a>
                       </li>
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link" href="#" data-tabs-path="Bissolo"
+                        <a class="catalog__painter-link" href="#bissolo" data-tabs-path="Bissolo"
                           aria-label="Переход на художника Биссоло, Франческо">Биссоло, Франческо</a>
                       </li>
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link" href="#" data-tabs-path="Boltraffio"
+                        <a class="catalog__painter-link" href="#boltraffio" data-tabs-path="Boltraffio"
                           aria-label="Переход на художника Больтраффио, Джованни">Больтраффио, Джованни</a>
                       </li>
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link" href="#" data-tabs-path="Bonsinyori"
+                        <a class="catalog__painter-link" href="#bonsinyori" data-tabs-path="Bonsinyori"
                           aria-label="Переход на художника Бонсиньори, Франческо">Бонсиньори, Франческо</a>
                       </li>
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link" href="#" data-tabs-path="Bottichini"
+                        <a class="catalog__painter-link" href="#bottichini" data-tabs-path="Bottichini"
                           aria-label="Переход на художника Боттичини, Рафаэлло">Боттичини, Рафаэлло</a>
                       </li>
                       <li class="catalog__accordion-list-item">
@@ -929,7 +927,7 @@
                           aria-label="Переход на художника Андреа Верроккьо">Андреа Верроккьо</a>
                       </li>
                       <li class="catalog__accordion-list-item">
-                        <a class="catalog__painter-link catalog__painter-link--active" href="#"
+                        <a class="catalog__painter-link catalog__painter-link--active" href="#domeniko"
                           data-tabs-path="Domenico_Ghirlandaio"
                           aria-label="Переход на художника Доменико Гирландайо">Доменико Гирландайо</a>
                       </li>
@@ -1462,7 +1460,8 @@
                 Категории
               </h2>
               <div class="publications__checkbox-wrap">
-                <button class="publications__checkbox-btn js-check-heading for-mobile-btn" type="button">
+                <button class="publications__checkbox-btn js-check-heading for-mobile-btn my-btn" type="button"
+                  tabindex="0" aria-label="Открытие категорий книг">
                   <h2 class="publications__checkbox-title">
                     Категории
                   </h2>
@@ -1600,9 +1599,9 @@
 
           <div class="publications__swiper publications-swiper">
             <div class="publications-navigation">
-              <button class="publications-btn publications-prev my-btn"></button>
+              <button class="publications-btn publications-prev my-btn" aria-label="Следующий слайд"></button>
               <div class="publications-pagination"></div>
-              <button class="publications-btn publications-next my-btn"></button>
+              <button class="publications-btn publications-next my-btn" aria-label="Предыдущий слайд"></button>
             </div>
 
             <ul class="publications__list swiper-wrapper">
@@ -1617,7 +1616,7 @@
                   <h3 class="publications__book-name">Искусство цвета</h3>
                   <span>Иттен, Иоханнес</span>
                   <span class="publications-span">620 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1631,7 +1630,7 @@
                   <h3 class="publications__book-name">Типографика</h3>
                   <span>Рудер, Эмиль</span>
                   <span class="publications-span">2&nbsp;450 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1645,7 +1644,7 @@
                   <h3 class="publications__book-name">Книга про буквы</h3>
                   <span>Гордон, Юрий</span>
                   <span class="publications-span">2&nbsp;200 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1657,10 +1656,10 @@
                 </picture>
                 <div class="publications-info">
                   <h3 class="publications__book-name">Николай Ильин</h3>
-                  <span>Кричевский, Влади...</span>
+                  <span>Кричевский, Влади</span>
                   <span class="none-320">мир</span>
                   <span class="publications-span">1&nbsp;100 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1674,7 +1673,7 @@
                   <h3 class="publications__book-name">Модульные сетки<span class="none-320"> в граф</span>...</h3>
                   <span>Мюллер-Брокманн</span><span class="none-320">, Йозеф</span>
                   <span class="publications-span">1&nbsp;450 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1688,7 +1687,7 @@
                   <h3 class="publications__book-name">Эволюция графич<span class="none-320">еских ст</span>...</h3>
                   <span>Хеллер, Чваст</span>
                   <span class="publications-span">3&nbsp;200 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1703,7 +1702,7 @@
                       в</span>...</h3>
                   <span>Арнхейм, Рудольф</span>
                   <span class="publications-span">2&nbsp;200 руб</span>
-                  <button class="publications__button my-btn">Заказать</button>
+                  <button class="publications__button my-btn" aria-label="Заказать книгу">Заказать</button>
                 </div>
               </li>
 
@@ -1742,7 +1741,7 @@
           бесполезности.
           Прежде всего, постоянное <nobr>информационно-пропагандистское</nobr>
           <button class="tooltip-btn tooltip-1 my-btn js-tooltip" id="myButton"
-            data-tippy-content="Пример современных тенденций - современная методология разработки">
+            data-tippy-content="Пример современных тенденций - современная методология разработки" aria-label="Пометка">
             <svg class="tooltip-marker" width="16" height="16">
               <g>
                 <path class="tooltip-marker-circle"
@@ -1758,7 +1757,8 @@
           представителей
           оппозиции могут быть <span class="parent">рассмотрены</span>
           <button class="tooltip-btn tooltip-2 my-btn js-tooltip" id="myButton-2"
-            data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">
+            data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+            aria-label="Пометка">
             <svg class="tooltip-marker" width="16" height="16">
               <g>
                 <path class="tooltip-marker-circle"
@@ -1769,7 +1769,7 @@
             </svg>
           </button> исключительно в&nbsp;разрезе маркетинговых&nbsp;и финансовых
           <button class="tooltip-btn tooltip-3 my-btn js-tooltip" id="myButton-3"
-            data-tippy-content="В стремлении повысить качество">
+            data-tippy-content="В стремлении повысить качество" aria-label="Пометка">
             <svg class="tooltip-marker" width="16" height="16">
               <g>
                 <path class="tooltip-marker-circle"
@@ -1795,7 +1795,7 @@
           бесполезности.
           Прежде всего, постоянное информационно-пропагандистское
           <button class="tooltip-btn tooltip-4 my-btn js-tooltip" id="myButton-4"
-            data-tippy-content="Пример современных тенденций - современная методология разработки">
+            data-tippy-content="Пример современных тенденций - современная методология разработки" aria-label="Пометка">
             <svg class="tooltip-marker" width="16" height="16">
               <g>
                 <path class="tooltip-marker-circle"
@@ -1811,7 +1811,8 @@
           представителей
           оппозиции могут быть <span class="parent">рассмотрены</span>
           <button class="tooltip-btn tooltip-5 my-btn js-tooltip" id="myButton-5"
-            data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">
+            data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+            aria-label="Пометка">
             <svg class="tooltip-marker" width="16" height="16">
               <g>
                 <path class="tooltip-marker-circle"
@@ -1822,7 +1823,7 @@
             </svg>
           </button> исключительно в&nbsp;разрезе маркетинговых&nbsp;и финансовых&nbsp;
           <button class="tooltip-btn tooltip-6 my-btn js-tooltip" id="myButton-6"
-            data-tippy-content="В стремлении повысить качество">
+            data-tippy-content="В стремлении повысить качество" aria-label="Пометка">
             <svg class="tooltip-marker" width="16" height="16">
               <g>
                 <path class="tooltip-marker-circle"
@@ -1904,8 +1905,8 @@
             </div>
           </div>
 
-          <button class="swiper-button-prev partners__button-prev my-btn"></button>
-          <button class="swiper-button-next partners__button-next my-btn"></button>
+          <button class="swiper-button-prev partners__button-prev my-btn" aria-label="Следующий слайд"></button>
+          <button class="swiper-button-next partners__button-next my-btn" aria-label="Предыдущий слайд"></button>
         </div>
 
       </div>
@@ -1956,7 +1957,7 @@
                     data-validate-rules="phone">
                 </label>
 
-                <button class="contacts__btn my-btn">Заказать</button>
+                <button class="contacts__btn my-btn" aria-label="Заказать">Заказать</button>
               </form>
               <div class="contacts__bottom">
                 <span class="contacts__bottom-text">

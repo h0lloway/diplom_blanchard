@@ -1,18 +1,27 @@
 // yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki
 
-$(document).ready(function () {
-  $("#menu").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1500);
-  });
+// $(document).ready(function () {
+//   $("#menu").on("click", "a", function (event) {
+//     event.preventDefault();
+//     var id = $(this).attr('href'),
+//       top = $(id).offset().top;
+//     $('body,html').animate({ scrollTop: top }, 1500);
+//   });
 
-  $("#button-contacts").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1700);
+//   $("#button-contacts").on("click", "a", function (event) {
+//     event.preventDefault();
+//     var id = $(this).attr('href'),
+//       top = $(id).offset().top;
+//     $('body,html').animate({ scrollTop: top }, 1700);
+//   });
+// });
+
+
+$(function () {
+  $('a[href^="#"]').click(function () {
+    var target = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
+    return false;
   });
 });
 
@@ -42,7 +51,7 @@ document.querySelector(".form-btn-open").addEventListener("click", function () {
   this.classList.add("active");
 });
 
-document.querySelector('.form-btn-close').addEventListener('click', function(event){
+document.querySelector('.form-btn-close').addEventListener('click', function (event) {
   document.querySelector('.form').classList.remove('form__active');
   document.querySelector('.form-btn-open').classList.remove('active');
   // this.classList.remove("active");
@@ -112,6 +121,7 @@ setMenuListener();
 
 let gallerySlider = new Swiper(".gallery__slides-container", {
   slidesPerView: 1,
+  // speed: 1000,
   grid: {
     rows: 1,
     fill: "row"
@@ -428,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 50,
 
     //Бесконечное листание страниц
-    speed: 2000,//Интервал ожидания
+    // speed: 2000,//Интервал ожидания
 
     //  autoplay: {
     //delay: 13000, Интервал ожидания
@@ -554,7 +564,7 @@ function init() {
   const myMap = new ymaps.Map(
     "map",
     {
-      center: [55.7630863, 37.6412295],
+      center: [55.75846306898368, 37.601079499999905],
       zoom: 14,
       controls: ['geolocationControl', 'zoomControl']
     },

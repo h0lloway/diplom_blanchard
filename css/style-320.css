@@ -44,6 +44,29 @@
     bottom: 8px;
   }
 
+  .header__burger.active {
+    width: 29px;
+    height: 17px;
+  }
+
+  .header__burger {
+    right: -8px;
+  }
+
+
+  .header__burger.active::after {
+    width: 71%;
+    left: -7px;
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 6px;
+    left: -7px;
+  }
+
   .form-btn-open svg {
     width: 18px;
     height: 18px;
@@ -260,8 +283,7 @@
     display: block;
     width: 100%;
     padding: 1px 40px 4px 0;
-    border: none;
-    color: #ffffff;
+    color: #fff;
     text-align: left;
     font-size: 24px;
     background-color: transparent;
@@ -310,13 +332,14 @@
   }
 
   .publications__checkbox-btn {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-  }
-
-  .publications__checkbox-btn {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     font-size: 16px;
     transition: color 0.3s ease;
+  }
+
+  .publications__checkbox-btn:focus-visible {
+    color: var(--hover-color);
   }
 
   .publications__checkbox-btn::after {
@@ -414,7 +437,6 @@
     margin-bottom: 20px;
   }
 
-
   .publications__container {
     padding: 0 15px;
   }
@@ -444,18 +466,10 @@
     margin-right: 0;
   }
 
-
-
-
-
   .publications__book-name {
     font-size: 11.8px;
     line-height: 12px;
   }
-
-
-
-
 
   .none-320 {
     display: none;
@@ -513,6 +527,10 @@
   .contacts__title {
     margin-top: 0px;
     margin-bottom: 12px;
+  }
+
+  .contacts__container-block {
+    flex-direction: column-reverse;
   }
 
   .contacts__adress {
@@ -582,6 +600,21 @@
     margin-left: 20px;
   }
 
+  .contacts__wrap,
+  .contacts__contacts {
+    border: none;
+  }
+
+  .contacts__contacts,
+  .contacts__map {
+    width: calc(100% + 30px);
+  }
+
+  .contacts__map {
+    height: 320px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 
   /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
 
@@ -603,6 +636,4 @@
     width: 50px;
     height: 50px;
   }
-
-
 }
