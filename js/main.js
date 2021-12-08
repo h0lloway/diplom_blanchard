@@ -688,6 +688,13 @@ btns.forEach((el) => {
     document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
     modalOverlay.classList.add('modal-overlay--visible');
   });
+
+  document.querySelector('.close-modal-btn').addEventListener('click', function (event) {
+    document.querySelector('.modal-overlay').classList.remove('modal-overlay--visible');
+    document.querySelector('.modal').classList.remove('modal--visible');
+
+  });
+
 });
 
 modalOverlay.addEventListener('click', (e) => {

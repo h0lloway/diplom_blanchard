@@ -253,6 +253,7 @@ body {
 
 .header__enter-btn {
   padding: 0;
+  padding-top: 5px;
   height: 25px;
 
   font-weight: 400;
@@ -388,23 +389,24 @@ body {
 }
 
 .bottom__search-txt::-webkit-input-placeholder {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .bottom__search-txt::-moz-placeholder {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .bottom__search-txt:-ms-input-placeholder {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .bottom__search-txt::-ms-input-placeholder {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .bottom__search-txt::placeholder {
-  color: #fff;
+  color: var(--white-color);
+  transition: all .3s ease;
 }
 
 .bottom__form {
@@ -419,6 +421,10 @@ body {
 
 .bottom__search-txt:focus-visible {
   border-bottom: 1px solid var(--focus-color);
+}
+
+.bottom__search-txt:focus-visible::placeholder {
+  opacity: 0
 }
 
 .bottom__search-txt:active {
@@ -1443,15 +1449,6 @@ body {
   flex-direction: column;
 }
 
-.empty-text {
-  margin-bottom: 20px;
-}
-
-.empty-btn {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
 .catalog__content-left {
   display: none;
   margin-right: 25px;
@@ -1517,6 +1514,16 @@ body {
   margin-bottom: 38px;
   max-width: 69%;
   line-height: 200%;
+}
+
+.empty-text {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.empty-btn {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .catalog__content-right {
@@ -3118,8 +3125,8 @@ input[type=number] {
 
 .modal {
   background-color: var(--white-color);
-  width: 300px;
-  height: 300px;
+  width: 900px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3157,3 +3164,66 @@ input[type=number] {
 .modal--visible .header {
   display: none;
 }
+
+.modal-wrap {
+  position: relative;
+}
+
+.close-modal-btn {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+}
+
+.modal-wrap-left {
+  width: 48%;
+}
+
+.modal-wrap-left img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.modal-wrap-right {
+  width: 52%;
+
+  padding-top: 124px;
+  padding-left: 17px;
+  padding-right: 50px;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #333;
+}
+
+.modal-pict-name {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #333;
+}
+
+.modal-years {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #969696;
+}
+
+.modal-descr {
+  margin-top: 31px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+

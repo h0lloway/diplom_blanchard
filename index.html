@@ -91,14 +91,14 @@
             </button>
           </nav>
 
-          <button class="header__enter-btn my-btn" aria-label="Вход в личный кабинет">
+          <a class="header__enter-btn my-btn" href="#" aria-label="Вход в личный кабинет">
             <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
                 fill="white" />
             </svg>
             <span>Войти</span>
-          </button>
+          </a>
 
           <div class="search-container">
             <div class="form-container">
@@ -1492,9 +1492,9 @@
               <div class="publications__checkbox-wrap">
                 <button class="publications__checkbox-btn js-check-heading for-mobile-btn my-btn" type="button"
                   tabindex="0" aria-label="Открытие категорий книг">
-                  <h2 class="publications__checkbox-title">
+                  <span class="publications__checkbox-title">
                     Категории
-                  </h2>
+                  </span>
                 </button>
 
 
@@ -1612,7 +1612,7 @@
               <!-- publications-price -->
               <div class="publications-price">
                 <h3 class="publications__subtitle publications__h3-price">Цена</h3>
-                <div action="https://jsonplaceholder.typicode.com/posts" class="publications-price__form">
+                <div class="publications-price__form">
                   <label for="from" class="publications-price__label">От</label>
                   <input type="number" class="publications-price__input publications-price__input_ot " id="from"
                     placeholder="50">
@@ -2112,22 +2112,186 @@
   <div class="modals fix-block">
     <div class="modal-overlay">
       <div class="modal modal--1" data-target="first-popup">
-        Окно 1
+
+
+        <div class="modal-wrap flex">
+          <div class="modal-wrap-left">
+            <img src="img/4-gallery/for-modal-1.jpg" alt="Картина...">
+          </div>
+          <div class="modal-wrap-right">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-pict-name">“Женщина с граблями”</span>
+            <span class="modal-years">1931-1932</span>
+            <p class="modal-descr">
+              Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+              1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+              году.
+            </p>
+          </div>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+
+
+
       </div>
       <div class="modal modal--2" data-target="second-popup">
-        Окно 2
+
+
+        <div class="modal-wrap flex">
+          <div class="modal-wrap-left">
+            <img src="img/4-gallery/for-modal-1.jpg" alt="Картина...">
+          </div>
+          <div class="modal-wrap-right">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-pict-name">“Женщина с граблями”</span>
+            <span class="modal-years">1931-1932</span>
+            <p class="modal-descr">
+              Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+              1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+              году.
+            </p>
+          </div>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+
+
       </div>
       <div class="modal modal--3" data-target="third-popup">
-        Окно 3
+
+
+        <div class="modal-wrap flex">
+          <div class="modal-wrap-left">
+            <img src="img/4-gallery/for-modal-1.jpg" alt="Картина...">
+          </div>
+          <div class="modal-wrap-right">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-pict-name">“Женщина с граблями”</span>
+            <span class="modal-years">1931-1932</span>
+            <p class="modal-descr">
+              Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+              1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+              году.
+            </p>
+          </div>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+
+
       </div>
       <div class="modal modal--4" data-target="thirteenth-popup">
-        Окно 4
+
+        <div class="modal-wrap flex">
+          <div class="modal-wrap-left">
+            <img src="img/4-gallery/for-modal-1.jpg" alt="Картина...">
+          </div>
+          <div class="modal-wrap-right">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-pict-name">“Женщина с граблями”</span>
+            <span class="modal-years">1931-1932</span>
+            <p class="modal-descr">
+              Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+              1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+              году.
+            </p>
+          </div>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+
+
       </div>
       <div class="modal modal--5" data-target="fourteenth-popup">
-        Окно 5
+
+        <div class="modal-wrap flex">
+          <div class="modal-wrap-left">
+            <img src="img/4-gallery/for-modal-1.jpg" alt="Картина...">
+          </div>
+          <div class="modal-wrap-right">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-pict-name">“Женщина с граблями”</span>
+            <span class="modal-years">1931-1932</span>
+            <p class="modal-descr">
+              Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+              1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+              году.
+            </p>
+          </div>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+
       </div>
       <div class="modal modal--6" data-target="fifteenth-popup">
-        Окно 6
+
+        <div class="modal-wrap flex">
+          <div class="modal-wrap-left">
+            <img src="img/4-gallery/for-modal-1.jpg" alt="Картина...">
+          </div>
+          <div class="modal-wrap-right">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-pict-name">“Женщина с граблями”</span>
+            <span class="modal-years">1931-1932</span>
+            <p class="modal-descr">
+              Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+              1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+              году.
+            </p>
+          </div>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+
       </div>
     </div>
   </div>
