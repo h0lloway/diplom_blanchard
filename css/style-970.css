@@ -4,18 +4,25 @@
   /* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog *//* catalog */
 
   .catalog__tab-content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .accordion {
     margin-left: 0;
     max-width: 100%;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 
   .painter {
     max-width: 100%;
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .catalog__tabs {
@@ -33,10 +40,6 @@
   .catalog__country-info {
     margin-bottom: 19px;
   }
-
-  /* .catalog__painter-list {
-    max-height: 343px;
-  } */
 
   .painter__photo {
     margin-bottom: 29px;

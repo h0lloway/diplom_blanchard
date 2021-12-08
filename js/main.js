@@ -31,7 +31,7 @@ $(function () {
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
     $('.header__burger,.header__menu').toggleClass('active');
-    // $('body').toggleClass('lock');
+    $('body').toggleClass('lock');
   });
 });
 
@@ -287,7 +287,7 @@ $(document).ready(function () {
 // events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events// events
 
 (() => {
-  const MOBILE_WIDTH = 575;
+  const MOBILE_WIDTH = 626;
   const DESKTOP_WIDTH = 961;
   const btn = document.querySelector(".js-show");
 
