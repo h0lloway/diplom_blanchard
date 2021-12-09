@@ -398,6 +398,10 @@
     right: .5px;
   }
 
+  .checkbox-content {
+    display: block;
+  }
+
   /* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects *//* projects */
 
   .projects__container {

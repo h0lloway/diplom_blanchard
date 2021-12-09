@@ -1968,6 +1968,7 @@ body {
 }
 
 .events__btn {
+  position: relative;
   width: 86px;
   margin-top: 82px;
 
@@ -1982,13 +1983,32 @@ body {
   transition: all .3s ease;
 }
 
+.events__btn::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  right: 0;
+  width: 107%;
+  height: 103%;
+  bottom: 0;
+
+  background: var(--active-color);
+  color: var(--white-color);
+  z-index: -1;
+  opacity: 0;
+}
+
 .events__btn:hover {
   color: var(--focus-color);
   border-bottom: 1px solid var(--focus-color);
 }
 
+.events__btn:focus-visible::before {
+  opacity: 1;
+}
+
 .events__btn:focus-visible {
-  background: var(--active-color);
   color: var(--white-color);
   border-bottom: 1px solid var(--white-color);
 }
