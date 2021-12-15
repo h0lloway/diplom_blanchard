@@ -10,7 +10,13 @@
     overflow: hidden;
   }
 
+  .header-top {
+    padding: 0;
+  }
+
   .header__container {
+    justify-content: space-between;
+
     padding-top: 29px;
     padding-bottom: 30px;
     padding-right: 55px;
@@ -49,7 +55,6 @@
     position: relative;
     width: 36px;
     height: 33px;
-    position: relative;
 
     z-index: 20;
   }
@@ -132,7 +137,8 @@
     bottom: 9px;
   }
 
-  .header__menu {
+  .header__nav-log {
+    display: block;
     position: fixed;
     top: -100%;
     left: 0;
@@ -149,7 +155,7 @@
     background: rgba(0, 0, 0, 0.9);
   }
 
-  .header__menu.active {
+  .header__nav-log.active {
     top: 0;
     left: 0;
   }
@@ -159,6 +165,7 @@
 
     padding-left: 46px;
     padding-top: 44px;
+    overflow-x: scroll;
   }
 
   .header__list li {
@@ -170,12 +177,12 @@
   }
 
   .bottom,
-  .header__enter-btn {
+  .header-bottom {
     display: none;
   }
 
+
   .header__mobile-enter-btn {
-    display: block;
     z-index: 2;
 
     margin-top: 132px;
@@ -190,6 +197,10 @@
     line-height: 25px;
 
     color: var(--white-color);
+  }
+
+  .header__btn-enter {
+    margin: 0;
   }
 
   .header__mobile-enter-btn:hover {
@@ -321,6 +332,18 @@
     display: none;
   }
 
+  .header__center-content {
+    display: block;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__right-content {
+    flex-grow: 0;
+  }
+
   /* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero */
 
   .hero__info {
@@ -328,7 +351,7 @@
   }
 
   .hero__fade-container {
-    margin-top: 81px;
+    margin-top: 12px;
   }
 
   .hero__fade-slide:nth-child(1) {
@@ -511,20 +534,22 @@
 
   /* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events */
 
+  /* .events__container {
+    padding-right: 0;
+  } */
+
   .events__title {
     margin-bottom: 17px;
   }
 
   .events__list-item {
+    width: calc(100% / 3 - 16px);
+
     margin-right: 24px;
   }
 
   .events__card-body {
     padding: 0 21px 49px 35px;
-  }
-
-  .events__slides-wrap {
-    margin-right: -47px;
   }
 
   .events__card-body-top {

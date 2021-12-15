@@ -10,6 +10,11 @@
 
   /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
 
+  .header-top {
+    padding-top: 7px;
+    padding-bottom: 5px;
+  }
+
   .header__container {
     padding: 0 33px 0 15px;
   }
@@ -103,13 +108,15 @@
   }
 
   .form {
-    padding-top: 27px;
+    padding-top: 6px;
     padding-left: 57px;
     padding-bottom: 19px;
 
     top: -52px;
     left: -15px;
     right: -33px;
+
+    z-index: 200;
   }
 
   .form-btn-open {
@@ -131,7 +138,7 @@
 
   .form-btn-close {
     position: absolute;
-    right: 15px;
+    right: 62px;
     top: 25px;
   }
 
@@ -148,11 +155,11 @@
   /* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero *//* hero */
 
   .hero__fade-container {
-    margin-top: 57px;
+    margin-top: 61px;
   }
 
   .hero__container {
-    margin-top: 78px;
+    margin-top: 33px;
     padding: 0 27px 0 29px;
   }
 

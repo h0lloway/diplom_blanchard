@@ -2,9 +2,9 @@
 
   /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
 
-  .header__list li {
-    margin: 0 0 0 25px;
-  }
+  .header__btn-enter {
+    margin-left: 13.45%;
+}
 
   .bottom__list-item:not(:last-child) {
     margin-right: 60px;

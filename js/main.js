@@ -1,22 +1,5 @@
 // yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki// yakornie linki
 
-// $(document).ready(function () {
-//   $("#menu").on("click", "a", function (event) {
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//       top = $(id).offset().top;
-//     $('body,html').animate({ scrollTop: top }, 1500);
-//   });
-
-//   $("#button-contacts").on("click", "a", function (event) {
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//       top = $(id).offset().top;
-//     $('body,html').animate({ scrollTop: top }, 1700);
-//   });
-// });
-
-
 $(function () {
   $('a[href^="#"]').click(function () {
     var target = $(this).attr('href');
@@ -30,7 +13,7 @@ $(function () {
 
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
-    $('.header__burger,.header__menu').toggleClass('active');
+    $('.header__burger,.header__nav-log').toggleClass('active');
     $('body').toggleClass('lock');
   });
 });
@@ -288,7 +271,7 @@ $(document).ready(function () {
 
 (() => {
   const MOBILE_WIDTH = 626;
-  const DESKTOP_WIDTH = 961;
+  const DESKTOP_WIDTH = 971;
   const btn = document.querySelector(".js-show");
 
   const sliderMobileParams = {
@@ -629,6 +612,19 @@ new JustValidate('.contacts__form', {
       required: 'Укажите ваш телефон',
     },
   },
+
+  submitHandler: function (form) {
+    let formData = new FormData(form);
+
+    fetch('mail.php', {
+      method: 'POST',
+      body: formData
+    }).then(() => {
+      console.log('Отправлено');
+      form.reset();
+    })
+      .catch(() => console.log('Ошибка'))
+  }
 });
 
 // tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips// tooltips
@@ -648,6 +644,7 @@ tippy('.js-tooltip', {
 const btns = document.querySelectorAll('.js-open-modal');
 const modalOverlay = document.querySelector('.modal-overlay');
 const modals = document.querySelectorAll('.modal');
+const closeBtns = document.querySelectorAll('.close-modal-btn')
 const body = document.body;
 const fixBlocks = document.querySelectorAll('.fix-block');
 
@@ -675,6 +672,13 @@ let enableScroll = function () {
   body.removeAttribute('data-position');
 }
 
+closeBtns.forEach(closeBtn => {
+  closeBtn.addEventListener('click', function (event) {
+    document.querySelector('.modal-overlay').classList.remove('modal-overlay--visible');
+    document.querySelector('.modal').classList.remove('modal--visible');
+  });
+});
+
 btns.forEach((el) => {
   el.addEventListener('click', (e) => {
     let path = e.currentTarget.getAttribute('data-path');
@@ -688,20 +692,11 @@ btns.forEach((el) => {
     document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
     modalOverlay.classList.add('modal-overlay--visible');
   });
-
-  document.querySelector('.close-modal-btn').addEventListener('click', function (event) {
-    document.querySelector('.modal-overlay').classList.remove('modal-overlay--visible');
-    document.querySelector('.modal').classList.remove('modal--visible');
-
-  });
-
 });
 
 modalOverlay.addEventListener('click', (e) => {
-
-  enableScroll();
-
   if (e.target == modalOverlay) {
+    enableScroll();
     modalOverlay.classList.remove('modal-overlay--visible');
     modals.forEach((el) => {
       el.classList.remove('modal--visible');

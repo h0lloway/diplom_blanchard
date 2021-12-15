@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   .container {
     padding-left: 50px;
     padding-right: 50px;
@@ -15,18 +15,18 @@
   }
 
   .form {
-    padding: 10px 3px 10px 12px;
+    padding: 10px 30px 10px 30px;
 
-    top: -35px;
-    left: -1px;
+    top: 0px;
+    left: 0px;
     right: 0;
 
-    background-color: #000;
+    background-color: var(--black-color);
   }
 
   .form__input {
     width: 100%;
-    background-color: #000;
+    background-color: var(--black-color);
   }
 
   .form-btn-open {
@@ -44,7 +44,7 @@
   }
 
   .form-btn-close svg path {
-    fill: #fff;
+    fill: var(--white-color);
   }
 
 
@@ -52,7 +52,7 @@
 
   .hero__container {
     padding: 0 45px 0 50px;
-    margin-top: 101px;
+    margin-top: 0;
   }
 
   .hero__fade-container {
@@ -283,13 +283,17 @@
   }
 
   .events__list-item {
-    width: calc(94.5% / 2 - 20px);
+    width: calc(100% / 2 - 16px);
     margin-right: 32px;
     margin-bottom: 51px;
   }
 
   .events__list-item:nth-child(3n+3) {
     margin-right: 32px;
+  }
+
+  .events__list-item:nth-child(even) {
+    margin-right: 0;
   }
 
   .events__card-body {
