@@ -3246,7 +3246,7 @@ input[type=number] {
   position: absolute;
   right: 20px;
   top: 21px;
-  transform: all .3s ease;
+  transition: all .3s ease;
 }
 
 .close-modal-btn svg path {
