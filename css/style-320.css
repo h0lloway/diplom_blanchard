@@ -34,6 +34,20 @@
     padding-top: 46px;
   }
 
+  .header__nav-log.active {
+    padding-top: 0;
+  }
+
+  .header__btn-enter {
+    margin-top: 27px;
+  }
+
+  .header__mobile-enter-btn span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .header__burger span {
     width: 45%;
     height: 2px;
@@ -56,10 +70,11 @@
   }
 
   .header__burger.active {
-    width: 29px;
-    height: 17px;
+    width: 36px;
+    height: 33px;
 
-    right: -5px;
+    right: -2px;
+    top: 4px;
   }
 
   .header__burger {
@@ -69,18 +84,19 @@
 
   .header__burger.active::after {
     width: 71%;
+
     left: -7px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    bottom: 9px;
+    bottom: 18px;
   }
 
   .header__burger.active::before {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: 6px;
+    top: 12px;
     left: -7px;
   }
 
@@ -107,16 +123,19 @@
     line-height: 16px;
   }
 
+  .header__enter-btn svg {
+    position: relative;
+    top: 2px;
+  }
+
   .form {
-    padding-top: 6px;
+    padding-top: 20px;
     padding-left: 57px;
     padding-bottom: 19px;
 
-    top: -52px;
-    left: -15px;
-    right: -33px;
-
-    z-index: 200;
+    top: 6px;
+    left: 0px;
+    right: 0px;
   }
 
   .form-btn-open {
@@ -128,18 +147,23 @@
     height: 18px;
   }
 
+  .form-btn-submit {
+    margin-right: 3px;
+  }
+
   .form__input {
     position: relative;
-    width: 68%;
+    width: 77%;
 
+    padding: 0;
     font-size: 14px;
     line-height: 28px;
   }
 
   .form-btn-close {
     position: absolute;
-    right: 62px;
-    top: 25px;
+    right: 15px;
+    top: 8px;
   }
 
   .form-btn-close svg {
@@ -248,7 +272,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-top: 19px;
+    margin-top: 4px;
     margin-bottom: 0;
   }
 
@@ -341,6 +365,10 @@
     line-height: 22px;
   }
 
+  .empty-text {
+    display: block;
+  }
+
   /* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events *//* events */
 
   .events__title {
@@ -404,7 +432,7 @@
     display: block;
     width: 100%;
     padding: 1px 40px 4px 0;
-    color: #fff;
+    color: var(--white-color);
     text-align: left;
     font-size: 24px;
     background-color: transparent;
@@ -413,6 +441,7 @@
   .publications-span {
     position: relative;
     top: -3px;
+    right: 0;
     font-size: 11px;
   }
 
@@ -631,6 +660,13 @@
     display: none;
   }
 
+  .publications-test {
+    max-width: 136px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   /* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox *//* checkbox */
 
   .swiper-pagination-bullet {
@@ -806,6 +842,35 @@
   }
 
   .footer__content img {
-    margin-top: 14px;
+    margin-top: 7px;
+  }
+
+  /* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal */
+
+  .modal {
+    width: 290px;
+    height: 600px;
+  }
+
+  .modal-wrap {
+    flex-direction: column;
+  }
+
+  .modal-descr {
+    margin-top: 5px;
+  }
+
+  .modal-wrap-left {
+    width: 100%;
+  }
+
+  .modal-wrap-left img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .modal-wrap-right {
+    width: 100%;
+    padding: 16px 21px 26px 18px;
   }
 }

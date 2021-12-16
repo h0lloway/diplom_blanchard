@@ -24,6 +24,10 @@
     background-color: var(--black-color);
   }
 
+  .form__active {
+    top: 24px;
+  }
+
   .form__input {
     width: 100%;
     background-color: var(--black-color);
@@ -297,7 +301,8 @@
   }
 
   .events__card-body {
-    padding-top: 3px
+    padding-top: 3px;
+    padding-bottom: 47px;
   }
 
 
@@ -308,7 +313,7 @@
 
 
   .events__open-btn {
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
 
   /* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications *//* publications */
@@ -398,8 +403,12 @@
   }
 
   .publications-span {
-    top: 10px;
-    right: .5px;
+    top: 14px;
+    right: 1%;
+  }
+
+  .none-320 {
+    display: none;
   }
 
   .checkbox-content {
@@ -460,7 +469,7 @@
 
   .contacts__content-left {
     min-width: 380px;
-    padding: 124px 44px 119px 0;
+    padding: 124px 44px 100px 0;
   }
 
   .contacts__form-input {
@@ -491,12 +500,23 @@
     padding: 40px 0;
   }
 
-  .footer__content img {
-    margin-top: 10px;
-  }
-
   .footer__list-item:not(:last-child) {
     margin-right: 30px;
+  }
+
+  /* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal *//* modal */
+
+  .modal {
+    width: 668px;
+    height: 594px;
+  }
+
+  .modal-wrap-left img {
+    height: 594px;
+  }
+
+  .modal-wrap-right {
+    padding: 122px 35px 82px 48px;
   }
 
 
