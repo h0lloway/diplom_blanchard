@@ -32,10 +32,12 @@
 
   .header__menu {
     padding-top: 46px;
+    padding-left: 15px;
+    padding-right: 200px;
   }
 
   .header__nav-log.active {
-    padding-top: 0;
+    padding: 0;
   }
 
   .header__btn-enter {
@@ -106,8 +108,7 @@
   }
 
   .header__list {
-    padding-left: 15px;
-    padding-top: 0px;
+    padding: 0;
   }
 
   .header__list li {

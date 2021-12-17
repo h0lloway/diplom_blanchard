@@ -356,26 +356,6 @@ body {
 }
 
 
-.bottom {
-  position: relative;
-  top: 100px;
-  left: 0;
-
-  width: 100%;
-
-  z-index: 40;
-}
-
-.bottom::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 4;
-}
 
 .bottom__container {
   padding-right: 30px;
@@ -492,12 +472,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-wrap: wrap;
 }
 
 .bottom__list-item {
   position: relative;
-
-  /* height: 70px; */
 
   color: var(--white-color);
 }
@@ -745,10 +724,6 @@ body {
   position: relative;
 }
 
-.hero__container {
-  margin-top: 70px;
-}
-
 .hero__fade-container {
   position: absolute;
   top: -140px;
@@ -882,6 +857,7 @@ body {
   position: relative;
   max-width: 600px;
 
+  padding-top: 70px;
   padding-bottom: 123px;
   z-index: 2;
 }

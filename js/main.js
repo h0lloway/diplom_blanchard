@@ -37,7 +37,6 @@ document.querySelector(".form-btn-open").addEventListener("click", function () {
 document.querySelector('.form-btn-close').addEventListener('click', function (event) {
   document.querySelector('.form').classList.remove('form__active');
   document.querySelector('.form-btn-open').classList.remove('active');
-  // this.classList.remove("active");
 });
 
 document.addEventListener("click", function (e) {
@@ -104,7 +103,6 @@ setMenuListener();
 
 let gallerySlider = new Swiper(".gallery__slides-container", {
   slidesPerView: 1,
-  // speed: 1000,
   grid: {
     rows: 1,
     fill: "row"
@@ -676,6 +674,7 @@ closeBtns.forEach(closeBtn => {
   closeBtn.addEventListener('click', function (event) {
     document.querySelector('.modal-overlay').classList.remove('modal-overlay--visible');
     document.querySelector('.modal').classList.remove('modal--visible');
+    // document.querySelector('body').classList.remove('disable-scroll');
   });
 });
 
