@@ -372,16 +372,9 @@
             animation-delay: 30s;
   }
 
-  .hero__container {
-    margin-top: 28px;
-  }
-
-  .hero__content {
-    padding-top: 85px;
-  }
-
   .hero__info {
     max-width: 655px;
+    padding-top: 113px;
   }
 
   .hero__descr {

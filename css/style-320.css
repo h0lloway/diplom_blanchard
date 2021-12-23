@@ -184,7 +184,6 @@
   }
 
   .hero__container {
-    margin-top: 33px;
     padding: 0 27px 0 29px;
   }
 
@@ -193,6 +192,7 @@
   }
 
   .hero__info {
+    padding-top: 33px;
     padding-bottom: 46px;
 
     text-align: center;

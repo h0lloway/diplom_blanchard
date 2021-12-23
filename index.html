@@ -81,9 +81,10 @@
                 <li><a class="header__link" href="#contacts" aria-label="Контакты">Контакты</a></li>
               </ul>
             </nav>
+
             <div class="header__btn-enter">
-              <a class="header__enter-btn header__mobile-enter-btn my-btn" href="#" aria-label="Вход в личный кабинет"
-                id="signin">
+              <a class="header__enter-btn header__mobile-enter-btn my-btn js-open-modal" href="#"
+                aria-label="Вход в личный кабинет" data-path="enter-popup">
                 <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
@@ -92,6 +93,7 @@
                 <span>Войти</span>
               </a>
             </div>
+
           </div>
 
 
@@ -389,9 +391,6 @@
       <div class="gallery__container container">
         <div class="gallery__content-wrap">
           <div class="gallery__top-left-elem">
-            <!-- <button class="js-open-modal" data-path="form-popup">Окно 1</button> -->
-            <!-- <button class="js-open-modal" data-path="me-popup">Окно 2</button> -->
-
             <h2 class="gallery__title common-title">
               Галерея
             </h2>
@@ -2192,6 +2191,39 @@
           </button>
         </div>
       </div>
+
+      <!-- модалка для кнопки "войти" -->
+
+      <div class="modal modal--7" data-target="enter-popup">
+        <div class="modal-enter-wrap">
+          <h4 class="modal-enter-title">Войдите в свой профиль</h4>
+          <form class="modal-enter-form" aria-label="Форма Войти" action="https://jsonplaceholder.typicode.com/posts"
+            method="post">
+            <label for="email">
+              <input class="modal-enter-input" type="email" name="email" id="email" placeholder="Электронная почта">
+            </label>
+            <label for="password">
+              <input class="modal-enter-input pass-input" type="password" name="password" id="password"
+                placeholder="Пароль">
+            </label>
+
+          </form>
+          <a class="modal-enter-link link-1" href="#">Не помню пароль</a>
+          <button class="modal-enter-btn my-btn">Войти</button>
+          <span class="modal-enter-txt">Ещё нет профиля? <a class="modal-enter-link"
+              href="#">Зарегестрируйтесь</a></span>
+          <button class="close-modal-btn my-btn">
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -2226,6 +2258,9 @@
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
+
+  <!-- снежинки -->
+  <!-- <script src="js/snowcursor.min.js"></script> -->
 
   <!-- myJs -->
   <script src="js/main.js"></script>

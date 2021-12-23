@@ -674,6 +674,7 @@ closeBtns.forEach(closeBtn => {
   closeBtn.addEventListener('click', function (event) {
     document.querySelector('.modal-overlay').classList.remove('modal-overlay--visible');
     document.querySelector('.modal').classList.remove('modal--visible');
+    enableScroll();
     // document.querySelector('body').classList.remove('disable-scroll');
   });
 });
