@@ -1,10 +1,18 @@
-@media (max-width: 1420px) {
+@media (max-width: 1650px) {
 
   /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
 
   .header__btn-enter {
     margin-left: 13.45%;
-}
+  }
+
+  .header__menu {
+    width: 73%;
+  }
+
+  .header__list li:not(:last-child) {
+    margin-right: 30px;
+  }
 
   .bottom__list-item:not(:last-child) {
     margin-right: 60px;

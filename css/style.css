@@ -254,7 +254,7 @@ body {
 }
 
 .header__list li:not(:last-child) {
-  margin-right: 60px;
+  margin-right: 64px;
 }
 
 .header__link {
