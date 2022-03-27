@@ -1,5 +1,4 @@
-# diplom_blanchard - 
+Лендинг для картинной галереи "Blanchard"
 
-http://blanchard.makdu-skillbox.tmweb.ru/
-
-https://h0lloway.github.io/diplom_blanchard/
+Смотреть - blanchard.makdu-skillbox.tmweb.ru/
+Смотреть - h0lloway.github.io/diplom_blanchard/
