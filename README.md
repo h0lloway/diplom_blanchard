@@ -1,5 +1,5 @@
 Лендинг для картинной галереи "Blanchard"
 
-Смотреть - blanchard.makdu-skillbox.tmweb.ru/
+Смотреть - http://blanchard.makdu-skillbox.tmweb.ru/
 
-Смотреть - h0lloway.github.io/diplom_blanchard/
+Смотреть - https://h0lloway.github.io/diplom_blanchard/
